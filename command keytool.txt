@@ -1,0 +1,19 @@
+"%JAVA_HOME%\bin\keytool" -importcert ^
+-alias bancs-cert ^
+-file "C:\ruta\al\certificado\server.crt" ^
+-keystore "%JAVA_HOME%\lib\security\cacerts" ^
+-storepass changeit ^
+-noprompt
+
+
+Orquesta las transacciones de referencias.
+TX067212 opc 1 -> bancaria
+TX067215 opc 2 -> tarjeta
+TX067214 opc 3 -> proveedor
+TX067216 opc 4 -> familia
+TX067217 opc 5 -> personal
+TX067213 opc 6 -> cliente
+TX067211 opc 7 -> contacto
+
+TX067218 opc 1,2,3,4,5,6,7
+TX067210 opc 1,2,3,4,5,6,7 solo esta responde con otra tx: TX067211
