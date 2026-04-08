@@ -20,3 +20,8 @@ TX067210 opc 1,2,3,4,5,6,7 solo esta responde con otra tx: TX067211
 
 https://oauth-openshift.apps.ocptest.uiotest.bpichinchatest.test/oauth/authorize?client_id=console&redirect_uri=https%3A%2F%2Fconsole-openshift-console.apps.ocptest.uiotest.bpichinchatest.test%2Fauth%2Fcallback&response_type=code&scope=user%3Afull&state=3116204ef45d44538703ec2ef4dc2e63
 
+
+Act as an expert Java developer and rename the classes and methods of the project to English using camelCase, and add explanatory comments to each class and method.
+Do not modify the code, only the names of the classes and methods and the explanatory comments
+C:\Users\rodpared\Documents\workspace\wsclientes0028\tnd-msa-sp-wsclientes0028
+ 
