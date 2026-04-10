@@ -21,6 +21,10 @@ TX067210 opc 1,2,3,4,5,6,7 solo esta responde con otra tx: TX067211
 https://oauth-openshift.apps.ocptest.uiotest.bpichinchatest.test/oauth/authorize?client_id=console&redirect_uri=https%3A%2F%2Fconsole-openshift-console.apps.ocptest.uiotest.bpichinchatest.test%2Fauth%2Fcallback&response_type=code&scope=user%3Afull&state=3116204ef45d44538703ec2ef4dc2e63
 
 
+curl -L 'https://tpr-msa-ad-bnc-products-details-enp.apps.ocpdev.uiotest.bpichinchatest.test/bancs/trx/060453' -H 'Content-Type: application/json' -H 'x-guid: 868277447969706202601091314060461' -H 'x-channel: 01' -H 'x-medium: 010002' -H 'x-session: 904084630074040202601091314060461' -H 'x-agency: 0008' -H 'Cookie: 04b8e4ec460e4e574dde3bf200020c26=bcf5a2eb33b25fae11898a86879d36bf; 48b9b618eb5a88c1a356ea0d29c453bc=b904c8b00446780bdcff18e098b0c3ff; c4870db2564b0c0fb5ca375515853fe1=8330ccbae73a388c6b594eb700451e8e' -d '{"transactionId":"060453","header":{"bancsUser":{"terminal":"1","institution":"003","branch":1,"workstation":1,"teller":"00070560","channel":"02","application":"02"}},"body":{"idNumber":"1802123370","idType":"0001","status":"1","intervinor1":"1"}}'
+
+
+
 Act as an expert Java developer and rename the classes and methods of the project to English using camelCase, and add explanatory comments to each class and method.
 Do not modify the code, only the names of the classes and methods and the explanatory comments
 C:\Users\rodpared\Documents\workspace\wsclientes0028\tnd-msa-sp-wsclientes0028
