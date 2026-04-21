@@ -28,4 +28,27 @@ curl -L 'https://tpr-msa-ad-bnc-products-details-enp.apps.ocpdev.uiotest.bpichin
 Act as an expert Java developer and rename the classes and methods of the project to English using camelCase, and add explanatory comments to each class and method.
 Do not modify the code, only the names of the classes and methods and the explanatory comments
 C:\Users\rodpared\Documents\workspace\wsclientes0028\tnd-msa-sp-wsclientes0028
- 
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Body>
+<soapenv:Fault>
+<faultcode>soapenv:Server</faultcode>
+<faultstring>BIP3113E: Exception detected in message flow com.bpichincha.esb.wsclientes0028.WSClientes0028.SOAP Input (integration node TCSBRKR1_BP) </faultstring>
+<detail>
+<Text>BIP2230E: Error detected whilst processing a message in node 'com.bpichincha.esb.wsclientes0028.WSClientes0028.IniciarServicioSOAP.FinalizarSOAP.Route'. 
+The integration node detected an error whilst processing a message in node 'com.bpichincha.esb.wsclientes0028.WSClientes0028.IniciarServicioSOAP.FinalizarSOAP.Route'. An exception has been thrown to cut short the processing of the message. 
+See the following messages for details of the error. : /build/jenkins_swg/slot2/product-build/WMB/src/DataFlowEngine/PluginInterface/ImbJniNode.cpp: 1269: ImbJniNode::evaluate: ComIbmRouteNode: com/bpichincha/esb/wsclientes0028/WSClientes0028#FCMComposite_1_3.com/bpichincha/esb/generico/generales/IniciarServicioSOAP#FCMComposite_1_9.com/bpichincha/esb/generico/generales/FinalizarServicioSOAP#FCMComposite_1_3
+BIP3752E: The SOAP Reply node 'com.bpichincha.esb.wsclientes0028.WSClientes0028.IniciarServicioSOAP.FinalizarSOAP.SOAP Reply' encountered an error while processing a reply message. 
+An error occurred during reply message processing. 
+See previous error messages to determine the cause of the error. : /build/jenkins_swg/slot2/product-build/WMB/src/WebServices/WSLibrary/ImbSOAPReplyNode.cpp: 416: ImbSOAPReplyNode::evaluate: ComIbmSOAPReplyNode: com/bpichincha/esb/wsclientes0028/WSClientes0028#FCMComposite_1_3.com/bpichincha/esb/generico/generales/IniciarServicioSOAP#FCMComposite_1_9.com/bpichincha/esb/generico/generales/FinalizarServicioSOAP#FCMComposite_1_2
+BIP3605E: The SOAP logical tree cannot be serialized. 
+There is a problem with the SOAP logical tree format. 
+Review further error messages for an indication to the cause of the error. Check that the SOAP logical supplied is correctly formatted. : /build/jenkins_swg/slot2/product-build/WMB/src/WebServices/WSLibrary/ImbSOAPParser.cpp: 1441: ImbSOAPParser::refreshBitStreamFromElementsInner: : 
+BIP3602E: The Web service payload ''{http://bpichincha.com/servicios}AsignarInformacionBieneResponse'' does not match an operation described by WSDL binding ''WSClientes0028SOAP'' in file ''WSClientes0028.wsdl''. 
+The first child of the SOAP Body does not correspond to any of the operations defined in the specified WSDL definition. 
+Check that the correct WSDL definition was deployed. : /build/jenkins_swg/slot2/product-build/WMB/src/WebServices/WSLibrary/ImbSOAPParser.cpp: 871: ImbSOAPParser::refreshBitStreamFromElementsInner: : </Text>
+</detail>
+</soapenv:Fault>
+</soapenv:Body>
+</soapenv:Envelope>
