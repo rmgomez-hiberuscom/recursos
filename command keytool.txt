@@ -52,3 +52,58 @@ Check that the correct WSDL definition was deployed. : /build/jenkins_swg/slot2/
 </soapenv:Fault>
 </soapenv:Body>
 </soapenv:Envelope>
+
+
+
+
+buenos días para los errores genéricos usar estos errores si no existe el teller  en la entrada del servicio responde
+
+ 
+
+SET bancsIn.error.codigo    = '9927';
+SET bancsIn.error.mensaje    = "Datos de la cabecera de la transaccion no se han asignado";
+SET bancsIn.error.tipo      = FATAL;      
+SET bancsIn.error.recurso    = servicio.recurso;
+SET bancsIn.error.componente  = moduloBancs;      
+SET bancsIn.error.backend    = "00638";
+
+ 
+
+ 
+
+Si no existe una excepcion en el conector a bancs se retorna 
+SET bancsIn.error.codigo    = '9928';
+SET bancsIn.error.mensaje    = "ESB-%2%" seguido de la excepcion;
+SET bancsIn.error.tipo      = FATAL;      
+SET bancsIn.error.recurso    = servicio.recurso;
+SET bancsIn.error.componente  = moduloBancs;      
+SET bancsIn.error.backend    = "00638";
+
+ 
+
+ 
+
+Si en el conector a bancs responde codigo 503 entonces retorna 
+SET bancsIn.error.codigo    = '9929';
+SET bancsIn.error.mensaje    = "Error al invocar transaccion Bancs";
+SET bancsIn.error.tipo      = FATAL;      
+SET bancsIn.error.recurso    = servicio.recurso;
+SET bancsIn.error.componente  = moduloBancs;      
+SET bancsIn.error.backend    = "00638";
+
+ 
+
+ 
+
+Si en el conector a bancs da timeout
+
+ 
+
+SET bancsIn.error.codigo    = '9920';
+SET bancsIn.error.mensaje    = "Tiempo de espera terminado sin respuesta";
+SET bancsIn.error.tipo      = FATAL;      
+SET bancsIn.error.recurso    = servicio.recurso;
+SET bancsIn.error.componente  = moduloBancs;      
+SET bancsIn.error.backend    = "00638";
+
+
