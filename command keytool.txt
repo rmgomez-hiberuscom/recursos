@@ -107,3 +107,48 @@ SET bancsIn.error.componente  = moduloBancs;      
 SET bancsIn.error.backend    = "00638";
 
 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://bpichincha.com/servicios">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:ConsultarCuentasClientes01>
+         <headerIn>
+            <dispositivo>DEVICE123</dispositivo>
+            <empresa>0010</empresa>
+            <canal>02</canal>
+            <medio>020002</medio>
+            <aplicacion>00270</aplicacion>
+            <agencia>00012</agencia>
+            <tipoTransaccion>304100111</tipoTransaccion>
+            <geolocalizacion>0,0</geolocalizacion>
+            <usuario>USINTERT</usuario>
+            <unicidad>UZhDOa2GXtkAK2/QovFagnnS+nQSGAF/SKyTIIv1axc=</unicidad>
+            <guid>550e8400e29b41d4a716446655440000</guid>
+            <fechaHora>202603311551000000</fechaHora>
+            <filler>00000000000000000000000000000000000000000000000000</filler>
+            <idioma>es</idioma>
+            <sesion>ASDASD77R01YH</sesion>
+            <ip>127.0.0.1</ip>
+            <idCliente>1711089364</idCliente>
+            <tipoIdCliente>0001</tipoIdCliente>
+            <bancs>
+               <teller>00070560</teller>
+               <terminal>000001</terminal>
+               <institucion>000001</institucion>
+               <agencia>00012</agencia>
+               <estacion>001</estacion>
+               <aplicacion>BEP</aplicacion>
+               <canal>02</canal>
+            </bancs>
+         </headerIn>
+         <bodyIn>
+            <!--Optional:-->
+            <identificacion>1802123370</identificacion>
+            <!--Optional:-->
+            <tipoIdentificacion>0001</tipoIdentificacion>
+            <!--Optional: T/CAC/IV/AH/CC -->
+            <tipoCuenta>CC</tipoCuenta>
+         </bodyIn>
+      </ser:ConsultarCuentasClientes01>
+   </soapenv:Body>
+</soapenv:Envelope>
+
