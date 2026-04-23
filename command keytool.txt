@@ -152,3 +152,46 @@ SET bancsIn.error.backend    = "00638";
    </soapenv:Body>
 </soapenv:Envelope>
 
+
+
+http://datapowertest.bp.bpichincha.com:8911/Omnicanalidad/IntegrationBus/WSClientes0074
+ 
+curl --request POST \
+  --url http://datapowertest.bp.bpichincha.com:8911/Omnicanalidad/IntegrationBus/WSClientes0074 \
+  --header 'Accept: application/xml' \
+  --header 'Content-Type: text/xml' \
+  --header 'SOAPAction: http://bpichincha.com/servicios/AsignarInformacionReferencias' \
+  --data '<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Header/>
+<soapenv:Body>
+<bp:ActualizarDatosActividadEconomica31
+			xmlns:bp="http://bpichincha.com/servicios">
+<headerIn>
+<dispositivo>01010101010101010101010101010101</dispositivo>
+<empresa>0010</empresa>
+<canal>03</canal>
+<medio>030006</medio>
+<aplicacion>00663</aplicacion>
+<agencia>1</agencia>
+<tipoTransaccion>201002401</tipoTransaccion>
+<geolocalizacion>2</geolocalizacion>
+<usuario>USINTERT</usuario>
+<unicidad>1</unicidad>
+<guid>MONITOREO-</guid>
+<fechaHora>202212291545150503</fechaHora>
+<filler>4</filler>
+<idioma>es-EC</idioma>
+<sesion>ASDASD77R01YH</sesion>
+<ip>10.192.168.45</ip>
+<idCliente>3</idCliente>
+<tipoIdCliente>0001</tipoIdCliente>
+</headerIn>
+<bodyIn>
+<cif>7412311</cif>
+<operacion>2</operacion>
+<clienteNatural>true</clienteNatural>
+</bodyIn>
+</bp:ActualizarDatosActividadEconomica31>
+</soapenv:Body>
+</soapenv:Envelope>'
