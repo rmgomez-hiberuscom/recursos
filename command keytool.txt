@@ -358,4 +358,150 @@ curl --request POST \
 </ser:ActualizarDatosDemograficos31>
 </soapenv:Body>
 </soapenv:Envelope>'
- 
+
+
+
+
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+X-Backside-Transport: FAIL FAIL
+Connection: close
+
+
+<soapenv:Envelope xmlns:ser="http://bpichincha.com/servicios" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:regexp="http://exslt.org/regular-expressions" xmlns:exsl="http://exslt.org/common" xmlns:ns2="http://bpichincha.com/servicios" xmlns:tns="http://www.example.org/tns" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Header/>
+<soapenv:Body>
+<ser:ActualizarDatosDemograficos31Response>
+<headerOut>
+<dispositivo>WEB</dispositivo>
+<empresa>01</empresa>
+<canal>WEB</canal>
+<medio>WEB</medio>
+<aplicacion>BEP</aplicacion>
+<agencia>00001</agencia>
+<tipoTransaccion>CONSULTA</tipoTransaccion>
+<geolocalizacion>-0.1807,-78.4678</geolocalizacion>
+<usuario>00070560</usuario>
+<unicidad>UNIC-20260418-0001</unicidad>
+<guid>550e8400-e2b9-41d4-a716-446655440000</guid>
+<fechaHora>202604188120000</fechaHora>
+<filler>N/A</filler>
+<idioma>ES</idioma>
+<sesion>SESS-001</sesion>
+<ip>192.168.1.1</ip>
+<idCliente>1718325226</idCliente>
+<tipoIdCliente>C</tipoIdCliente>
+<bancs>
+<teller/>
+<terminal>1</terminal>
+<institucion>003</institucion>
+<agencia>1</agencia>
+<estacion>1</estacion>
+<aplicacion>1</aplicacion>
+<canal>1</canal></bancs></headerOut>
+<error>
+<codigo>8888</codigo>
+<mensaje>Longitud incorrecta, longitud: 8</mensaje>
+<mensajeNegocio/>
+<tipo>FATAL</tipo>
+<recurso>Multiprotocol Gateway/MPGW_ESB_SOAP_CLIENTES</recurso>
+<componente>MPGW_ESB_SOAP_CLIENTES</componente>
+<backend>00640</backend></error></ser:ActualizarDatosDemograficos31Response></soapenv:Body></soapenv:Envelope>
+
+
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+X-Backside-Transport: FAIL FAIL
+Connection: close
+
+
+<soapenv:Envelope xmlns:ser="http://bpichincha.com/servicios" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:regexp="http://exslt.org/regular-expressions" xmlns:exsl="http://exslt.org/common" xmlns:ns2="http://bpichincha.com/servicios" xmlns:tns="http://www.example.org/tns" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Header/>
+<soapenv:Body>
+<ser:ActualizarDatosDemograficos31Response>
+<headerOut>
+<dispositivo>WEB</dispositivo>
+<empresa>01</empresa>
+<canal>WEB</canal>
+<medio>WEB</medio>
+<aplicacion>BEP</aplicacion>
+<agencia>00001</agencia>
+<tipoTransaccion>CONSULTA</tipoTransaccion>
+<geolocalizacion>-0.1807,-78.4678</geolocalizacion>
+<usuario>00070560</usuario>
+<unicidad>UNIC-20260418-0001</unicidad>
+<guid>550e8400-e2b9-41d4-a716-446655440000</guid>
+<fechaHora>202604188120000</fechaHora>
+<filler>N/A</filler>
+<idioma>ES</idioma>
+<sesion>SESS-001</sesion>
+<ip>192.168.1.1</ip>
+<idCliente>1718325226</idCliente>
+<tipoIdCliente>C</tipoIdCliente>
+<bancs>
+<teller/>
+<terminal>1</terminal>
+<institucion>003</institucion>
+<agencia>1</agencia>
+<estacion>1</estacion>
+<aplicacion>1</aplicacion>
+<canal>1</canal></bancs></headerOut>
+<error>
+<codigo>8888</codigo>
+<mensaje>Longitud incorrecta, longitud: 8</mensaje>
+<mensajeNegocio/>
+<tipo>FATAL</tipo>
+<recurso>Multiprotocol Gateway/MPGW_ESB_SOAP_CLIENTES</recurso>
+<componente>MPGW_ESB_SOAP_CLIENTES</componente>
+<backend>00640</backend></error></ser:ActualizarDatosDemograficos31Response></soapenv:Body></soapenv:Envelope>
+
+
+
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+X-Backside-Transport: FAIL FAIL
+Connection: close
+
+
+<soapenv:Envelope xmlns:ser="http://bpichincha.com/servicios" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:regexp="http://exslt.org/regular-expressions" xmlns:exsl="http://exslt.org/common" xmlns:ns2="http://bpichincha.com/servicios" xmlns:tns="http://www.example.org/tns" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Header/>
+<soapenv:Body>
+<ser:ActualizarDatosDemograficos31Response>
+<headerOut>
+<dispositivo>WEB</dispositivo>
+<empresa>01</empresa>
+<canal>WEB</canal>
+<medio>WEB</medio>
+<aplicacion>BEP</aplicacion>
+<agencia>00001</agencia>
+<tipoTransaccion>CONSULTA</tipoTransaccion>
+<geolocalizacion>-0.1807,-78.4678</geolocalizacion>
+<usuario>00070560</usuario>
+<unicidad>UNIC-20260418-0001</unicidad>
+<guid>550e8400-e2b9-41d4-a716-446655440000</guid>
+<fechaHora>202604188120000</fechaHora>
+<filler>N/A</filler>
+<idioma>ES</idioma>
+<sesion>SESS-001</sesion>
+<ip>192.168.1.1</ip>
+<idCliente>1718325226</idCliente>
+<tipoIdCliente>C</tipoIdCliente>
+<bancs>
+<teller/>
+<terminal>1</terminal>
+<institucion>003</institucion>
+<agencia>1</agencia>
+<estacion>1</estacion>
+<aplicacion>1</aplicacion>
+<canal>1</canal></bancs></headerOut>
+<error>
+<codigo>8888</codigo>
+<mensaje>Longitud incorrecta, longitud: 8</mensaje>
+<mensajeNegocio/>
+<tipo>FATAL</tipo>
+<recurso>Multiprotocol Gateway/MPGW_ESB_SOAP_CLIENTES</recurso>
+<componente>MPGW_ESB_SOAP_CLIENTES</componente>
+<backend>00640</backend></error></ser:ActualizarDatosDemograficos31Response></soapenv:Body></soapenv:Envelope>
