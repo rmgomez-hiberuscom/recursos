@@ -1,0 +1,158 @@
+
+WSClientes0067
+Request consulta
+<!--identificacion: 1802123370, 0001/ 1791821580001, 0003/  -->
+<!--tipoCuenta: ALL/T/CAC/IV/AH/CC -->
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://bpichincha.com/servicios">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:ConsultarCuentasClientes01>
+         <headerIn>
+            <dispositivo>DEVICE123</dispositivo>
+            <empresa>0010</empresa>
+            <canal>02</canal>
+            <medio>020002</medio>
+            <aplicacion>00270</aplicacion>
+            <agencia>00012</agencia>
+            <tipoTransaccion>304100111</tipoTransaccion>
+            <geolocalizacion>0,0</geolocalizacion>
+            <usuario>USINTERT</usuario>
+            <unicidad>UZhDOa2GXtkAK2/QovFagnnS+nQSGAF/SKyTIIv1axc=</unicidad>
+            <guid>550e8400e29b41d4a716446655440000</guid>
+            <fechaHora>202603311551000000</fechaHora>
+            <filler>00000000000000000000000000000000000000000000000000</filler>
+            <idioma>es</idioma>
+            <sesion>ASDASD77R01YH</sesion>
+            <ip>127.0.0.1</ip>
+            <idCliente>1711089364</idCliente>
+            <tipoIdCliente>0001</tipoIdCliente>
+            <bancs>
+               <teller>00070560</teller>
+               <terminal>000001</terminal>
+               <institucion>000001</institucion>
+               <agencia>00012</agencia>
+               <estacion>001</estacion>
+               <aplicacion>BEP</aplicacion>
+               <canal>02</canal>
+            </bancs>
+         </headerIn>
+         <bodyIn>
+            <!--Optional:-->
+            <identificacion>1791821580001</identificacion>
+            <!--Optional:-->
+            <tipoIdentificacion>0003</tipoIdentificacion>
+           <!--Optional: ALL/T/CAC/IV/AH/CC -->
+            <tipoCuenta>ALL</tipoCuenta>
+         </bodyIn>
+      </ser:ConsultarCuentasClientes01>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+WsCleinte0072
+Request Consulta
+
+<!--referencia: 0 (todas), 1 (banco),2 (TC),3 (proveedor), 4 (Familiares), 5 (Personales), 6 (Clientes), 7(Contactos)  -->
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://bpichincha.com/servicios">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:ActualizarDatosReferencias31>
+         <headerIn>
+            <dispositivo>DEVICE123</dispositivo>
+            <empresa>0010</empresa>
+            <canal>02</canal>
+            <medio>020002</medio>
+            <aplicacion>00270</aplicacion>
+            <agencia>00012</agencia>
+            <tipoTransaccion>304100111</tipoTransaccion>
+            <geolocalizacion>0,0</geolocalizacion>
+            <usuario>USINTERT</usuario>
+            <unicidad>UZhDOa2GXtkAK2/QovFagnnS+nQSGAF/SKyTIIv1axc=</unicidad>
+            <guid>550e8400e29b41d4a716446655440000</guid>
+            <fechaHora>202603311551000000</fechaHora>
+            <filler>00000000000000000000000000000000000000000000000000</filler>
+            <idioma>es</idioma>
+            <sesion>ASDASD77R01YH</sesion>
+            <ip>127.0.0.1</ip>
+            <idCliente>1711089364</idCliente>
+            <tipoIdCliente>0001</tipoIdCliente>
+            <bancs>
+               <teller>00070560</teller>
+               <terminal>1</terminal>
+               <institucion>003</institucion>
+               <agencia>1</agencia>
+               <estacion>1</estacion>
+               <aplicacion>02</aplicacion>
+               <canal>02</canal>
+            </bancs>
+         </headerIn>
+         <bodyIn>
+            <cif>3775863</cif>
+            <operacion>2</operacion>
+            <referencia>0</referencia>
+         </bodyIn>
+      </ser:ActualizarDatosReferencias31>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Request update 
+ <!--operacion: A, M, B,-->
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://bpichincha.com/servicios">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:ActualizarDatosReferencias31>
+         <headerIn>
+             <dispositivo>DEVICE123</dispositivo>
+            <empresa>0010</empresa>
+            <canal>02</canal>
+            <medio>020002</medio>
+            <aplicacion>00270</aplicacion>
+            <agencia>00012</agencia>
+            <tipoTransaccion>304100111</tipoTransaccion>
+            <geolocalizacion>0,0</geolocalizacion>
+            <usuario>USINTERT</usuario>
+            <unicidad>UZhDOa2GXtkAK2/QovFagnnS+nQSGAF/SKyTIIv1axc=</unicidad>
+            <guid>550e8400e29b41d4a716446655440000</guid>
+            <fechaHora>202603311551000000</fechaHora>
+            <filler>00000000000000000000000000000000000000000000000000</filler>
+            <idioma>es</idioma>
+            <sesion>ASDASD77R01YH</sesion>
+            <ip>127.0.0.1</ip>
+            <idCliente>1711089364</idCliente>
+            <tipoIdCliente>0001</tipoIdCliente>
+            <bancs>
+               <teller>00070560</teller>
+               <terminal>1</terminal>
+               <institucion>003</institucion>
+               <agencia>1</agencia>
+               <estacion>1</estacion>
+               <aplicacion>02</aplicacion>
+               <canal>02</canal>
+            </bancs>
+         </headerIn>
+         <bodyIn>
+            <cif>3775863</cif>
+            <operacion>1</operacion>
+            <referencia>1</referencia>
+             <!--operacion:-->
+            <DatosReferencias>
+               <!--Optional:-->
+               <ReferenciaBancaria>
+                  <!--Zero or more repetitions:-->
+                 <TipoReferenciaBancaria>
+                     <numeroCuentaOtroBanco>000056987</numeroCuentaOtroBanco>
+                     <tipoCuenta>A</tipoCuenta>
+                     <nombreBanco>PACIFICO</nombreBanco>
+                     <nombreAsesorCuentaOtroBanco>PruebaX</nombreAsesorCuentaOtroBanco>
+                     <operacion>M</operacion>
+                     <identificador>1</identificador>
+                  </TipoReferenciaBancaria>
+               </ReferenciaBancaria>
+            </DatosReferencias>
+         </bodyIn>
+      </ser:ActualizarDatosReferencias31>
+   </soapenv:Body>
+</soapenv:Envelope>
