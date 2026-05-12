@@ -5,6 +5,8 @@
 -storepass changeit ^
 -noprompt
 
+BCK - Acceso a la Plataforma de Backstage - Perfil: Developers
+ 
 strict-ssl=false
 
 @echo off
