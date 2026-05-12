@@ -5,6 +5,8 @@
 -storepass changeit ^
 -noprompt
 
+strict-ssl=false
+
 @echo off
 java -jar "tu path" %*
 
