@@ -5,6 +5,8 @@
 -storepass changeit ^
 -noprompt
 
+@echo off
+java -jar "tu path" %*
 
 Orquesta las transacciones de referencias.
 TX067212 opc 1 -> bancaria
