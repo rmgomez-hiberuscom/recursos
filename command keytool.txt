@@ -8,6 +8,8 @@
 @echo off
 java -jar "tu path" %*
 
+gradle bootRun --args="--spring.profiles.active=local"
+
 Orquesta las transacciones de referencias.
 TX067212 opc 1 -> bancaria
 TX067215 opc 2 -> tarjeta
