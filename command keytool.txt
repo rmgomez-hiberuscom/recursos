@@ -10,6 +10,15 @@ java -jar "tu path" %*
 
 gradle bootRun --args="--spring.profiles.active=local"
 
+"java.jdt.ls.java.home": "C:\\Program Files\\Java\\jdk-21",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-21",
+            "path": "C:\\Program Files\\Java\\jdk-21",
+            "default": true
+        }
+    ]
+
 Orquesta las transacciones de referencias.
 TX067212 opc 1 -> bancaria
 TX067215 opc 2 -> tarjeta
