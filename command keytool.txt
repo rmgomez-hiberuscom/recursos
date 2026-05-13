@@ -5,6 +5,26 @@
 -storepass changeit ^
 -noprompt
 
+en visual code:
+spring-boot.ls.java.home por tu JAVA_HOME
+gradle.properties pon: org.gradle.java.home=C:/Usuarios/TuUsuario/Ruta/A/Tu/Java
+
+### 4. Forzar el uso del Certificado en la ejecución
+Como necesitas que Spring Boot reconozca el certificado que agregaste al `cacerts`, es vital que al ejecutar la aplicación se use ese keystore. Puedes añadir esto a tu configuración de lanzamiento (`launch.json`) en VS Code:
+
+1.  Ve a la pestaña **Run and Debug** -> **create a launch.json file**.
+2.  En la configuración de tu aplicación Spring Boot, añade o verifica el campo `vmArgs`:
+    
+```json
+    {
+        "type": "java",
+        "name": "Spring Boot App",
+        "request": "launch",
+        "mainClass": "com.ejemplo.TuApplication",
+        "vmArgs": "-Djavax.net.ssl.trustStore=\"C:/Ruta/A/Tu/Java/lib/security/cacerts\" -Djavax.net.ssl.trustStorePassword=changeit"
+    }
+    ```
+-------------------------------------------------
 BCK - Acceso a la Plataforma de Backstage - Perfil: Developers
  
 strict-ssl=false
