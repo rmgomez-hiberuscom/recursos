@@ -599,3 +599,110 @@ Connection: close
 <recurso>Multiprotocol Gateway/MPGW_ESB_SOAP_CLIENTES</recurso>
 <componente>MPGW_ESB_SOAP_CLIENTES</componente>
 <backend>00640</backend></error></ser:ActualizarDatosDemograficos31Response></soapenv:Body></soapenv:Envelope>
+
+
+----------------------- wsclientes0103 --------------
+curl --request POST \
+  --url https://tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/bancs/trx/067510 \
+  --header 'Accept: application/json' \
+  --header 'Content-Type: application/json' \
+  --header 'Cookie: 04b8e4ec460e4e574dde3bf200020c26=936fa25ced590fd0ee1ee8a1c05161ff; 04b8e4ec460e4e574dde3bf200020c26=d62fd2253c6315db0f7ea63b8d240d4b; 7435db4d20daed63b0bd6cc2cc8bf1cf=da1dd3c0c52e4299651e62a793bb015b' \
+  --header 'x-app: 12332' \
+  --header 'x-channel: 10' \
+  --header 'x-device: movil' \
+  --header 'x-device-ip: 0.0.0.0' \
+  --header 'x-guid: 550e8400-e29b-41d4-a716-4466554400XX' \
+  --header 'x-medium: 131213' \
+  --header 'x-session: abs' \
+  --cookie 'dtCookiewh95kubn=v_4_srv_2_sn_5E1C3C3FB68A254150B3230CDAA52468_perc_100000_ol_0_mul_1_app-3Aea7c4b59f27d43eb_1_rcs-3Acss_0; 7435db4d20daed63b0bd6cc2cc8bf1cf=5d96d57f187f366b3c5b6e0ce00105cf' \
+  --data '{
+    "transactionId": "067510",
+    "header": {
+        "bancsUser": {
+            "teller": "00070560",
+            "terminal": "1",
+            "institution": "003",
+            "branch": "1",
+            "workstation": "1",
+            "channel": "02"
+        }
+    },
+    "body": {
+        "operacion": "3",
+        "customerCIF": "0000000003807956",
+        "primerApellido": "ELIZALDE",
+        "segundoApellido": "ELIZALDE",
+        "primerNombre": "HECTOR",
+        "segundoNombre": "MARIO",
+        "nacionalidad": "EC",
+        "fechaNacimiento": "30051944",
+        "estadoCivil": "2",
+        "sexo": "0",
+        "nivelEstudios": "2000",
+        "paisNacimiento": "EC",
+        "provinciaEstadoNacimiento": "01",
+        "ciudadNacimiento": "0279",
+        "separacionBienes": "1",
+        "tipoVivienda": "1",
+        "numeroCargasFamiliares": "0",
+        "edad": "80",
+        "otrnacion": "N",
+        "clieobligcont": "N",
+        "situacion_lab2": "1",
+        "tribuExt": "N",
+        "tingin": "0",
+        "sececon2": "17000",
+        "actecon2": "17630",
+        "nmNegocioInd": "Casa",
+        "dtIniNegInd": "28042022",
+        "nroEmpl": "0",
+        "nroSuc": "0",
+        "fixMnthIncm": "0.000",
+        "varMnthIncm": "0.000",
+        "annualSales": "6825.000",
+        "othMnthIncm": "0.000",
+        "dtFixIncm": "0",
+        "spouseMnthIncm":"0.000",
+        "fixMnthIncm1": "35.000",
+        "fixMnthIncm2": "0.000",
+        "salesCost": "3675.000",
+        "opCharges": "45.000",
+        "othMnthExp": "303.170",
+        "detExp": "Pago Cuotas Sistema Financiero",
+        "totAsset": "65975.000",
+        "prodAsset": "32975.000",
+        "dtBalSheet": "29042025",
+        "totLiability": "10686.810",
+        "totEquity": "55288.190",
+        "equityDt": "29042025",
+        "addTitular": "1",
+        "additionalAddress": [
+            {
+                "addTipoDir": "01",
+                "addCallePrin": "Valle 1",
+                "addCalleSecun": "Calle 5",
+                "addPaisDirec": "EC",
+                "addProv": "04",
+                "addCuidad": "0020",
+                "addCanton": "0404",
+                "addParr": "040451",
+                "addLatitude": "000209006-",
+                "addLongitude": "078500740-",
+                "addInfoAdd": "Iglesia 08 DE DICIEMBRE"
+            }
+        ],
+        "additionalAEmailDet": [
+            {
+                "addCell": "03Valle 1"
+            },
+            {
+                "addEmail": "Calle 5"
+            }
+        ],
+        "refDetails": [],
+        "cifClienteRelacion": "0",
+        "fecIniRel": "0"
+    }
+}'
+-----------------------------------------------------
+
