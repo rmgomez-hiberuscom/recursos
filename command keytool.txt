@@ -5,6 +5,8 @@
 -storepass changeit ^
 -noprompt
 
+value: "-XX:InitialRAMPercentage=70.0 -XX:MaxRAMPercentage=70.0 -XX:+UseStringDeduplication -XX:+UseG1GC"
+
 en visual code:
 spring-boot.ls.java.home por tu JAVA_HOME
 gradle.properties pon: org.gradle.java.home=C:/Usuarios/TuUsuario/Ruta/A/Tu/Java
