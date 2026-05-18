@@ -5,6 +5,8 @@
 -storepass changeit ^
 -noprompt
 
+Openshit
+https://console-openshift-console.apps.ocpdev.uiotest.bpichinchatest.test/
 https://console-openshift-console.apps.ocptest.uiotest.bpichinchatest.test/
 
 value: "-XX:InitialRAMPercentage=70.0 -XX:MaxRAMPercentage=70.0 -XX:+UseStringDeduplication -XX:+UseG1GC"
