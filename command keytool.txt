@@ -712,3 +712,36 @@ curl --request POST \
 }'
 -----------------------------------------------------
 
+
+server:
+  port: 8090
+spring:
+  main:
+    lazy-initialization: on
+  application:
+    name: tpr-msa-sp-wslientes0080
+  header:
+    channel: digital
+    medium: web
+
+ump-clientes0085-config:
+  metodo-garantias: consultarGarantia
+  url-garantias: http://10.60.144.57:9443/consultaGarantiasSARWS/GarantiasSARWSService
+  name-space-garantias: http://service.consultagarantiassar.pichincha.com.ec/
+
+integration:
+  ump-clientes0085:
+    connect-timeout-ms: 3000
+    read-timeout-ms: 10000
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      umpClientes0085:
+        slidingWindowSize: 10
+        minimumNumberOfCalls: 5
+        permittedNumberOfCallsInHalfOpenState: 3
+        waitDurationInOpenState: 30s
+        failureRateThreshold: 50
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+ 
