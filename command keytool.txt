@@ -10,8 +10,10 @@ https://console-openshift-console.apps.ocpdev.uiotest.bpichinchatest.test/
 https://console-openshift-console.apps.ocptest.uiotest.bpichinchatest.test/
 
 value: "-XX:InitialRAMPercentage=70.0 -XX:MaxRAMPercentage=70.0 -XX:+UseStringDeduplication -XX:+UseG1GC"
-
+dev
 jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(LOAD_BALANCE=YES)(FAILOVER=ON)(ADDRESS=(PROTOCOL=TCP)(HOST=TSECXDB004.uiotest.bpichinchatest.test)(PORT=10521))(ADDRESS=(PROTOCOL=TCP)(HOST=TSECXDB003.uiotest.bpichinchatest.test)(PORT=10521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=m012band_taf)))
+test
+ jdbc:oracle:thin:@(DESCRIPTION =(ADDRESS_LIST =(LOAD_BALANCE = YES)(FAILOVER = ON)(ADDRESS = (PROTOCOL = TCP)(HOST = tsecldb006.uiotest.bpichinchatest.test)(PORT = 10521))(ADDRESS = (PROTOCOL = TCP)(HOST = tsecldb007.uiotest.bpichinchatest.test)(PORT = 10521)))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = gdsrw_m012band.pool_m012band.oradbcloud)))
 
 en visual code:
 spring-boot.ls.java.home por tu JAVA_HOME
