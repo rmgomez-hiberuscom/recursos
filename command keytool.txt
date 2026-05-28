@@ -841,3 +841,35 @@ resilience4j:
 </ser:crearCliente24>
 </soapenv:Body>
 </soapenv:Envelope>
+
+
+curl --request POST \
+  --url https://tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/bancs/trx/067050-1 \
+  --header 'Accept: application/json' \
+  --header 'Content-Type: application/json' \
+  --header 'Cookie: 04b8e4ec460e4e574dde3bf200020c26=936fa25ced590fd0ee1ee8a1c05161ff; 04b8e4ec460e4e574dde3bf200020c26=d62fd2253c6315db0f7ea63b8d240d4b' \
+  --header 'x-app: 12332' \
+  --header 'x-channel: 10' \
+  --header 'x-device: movil' \
+  --header 'x-device-ip: 0.0.0.0' \
+  --header 'x-guid: 550e8400-e29b-41d4-a716-4466554400XX' \
+  --header 'x-medium: 131213' \
+  --header 'x-session: abs' \
+  --cookie 'dtCookiewh95kubn=v_4_srv_2_sn_5E1C3C3FB68A254150B3230CDAA52468_perc_100000_ol_0_mul_1_app-3Aea7c4b59f27d43eb_1_rcs-3Acss_0; 7435db4d20daed63b0bd6cc2cc8bf1cf=e8517db1193e773cf4b5346039003f40' \
+  --data '{
+  "transactionId": "067050",
+  "header": {
+    "bancsUser": {
+      "teller": "00070560",
+      "terminal": "1",
+      "institution": "003",
+      "branch": "1",
+      "workstation": "1",
+      "channel": "02"
+    }
+  },
+  "body": {
+    "accntNumber1": 5319747,
+    "defInteger1": 1
+  }
+}'
