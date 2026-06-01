@@ -5,6 +5,102 @@
 -storepass changeit ^
 -noprompt
 
+http://10.60.128.85:2000/IntegrationBus/soap/WSClientes0108
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://bpichincha.com/servicios">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:crearCliente24>
+         <headerIn>
+            <dispositivo>01010101010101010101010101010101010101010101</dispositivo>
+            <empresa>0010</empresa>
+            <canal>02</canal>
+            <medio>020007</medio>
+            <aplicacion>00664</aplicacion>
+            <agencia>0012</agencia>
+            <tipoTransaccion>2010010824</tipoTransaccion>
+            <geolocalizacion/>
+            <usuario>USINTERT</usuario>
+            <unicidad/>
+            <guid>3F2504E04F8911D39A0C0305E82C3302</guid>
+            <fechaHora>201902281459012548</fechaHora>
+            <filler/>
+            <idioma>es-EC</idioma>
+            <sesion>zxxxxxxssss</sesion>
+            <ip>10.0.94.183</ip>
+            <idCliente>1004350889</idCliente>
+            <tipoIdCliente/>
+            <bancs>
+               <teller>100028</teller>
+               <terminal>39</terminal>
+               <institucion>0010</institucion>
+               <agencia>0001</agencia>
+               <estacion>1</estacion>
+               <aplicacion>BEP</aplicacion>
+               <canal>i</canal>
+            </bancs>
+         </headerIn>
+         <bodyIn>
+            <cif>0000000007409566</cif>
+            <!--Optional:-->
+            <datosBasicos>
+               <!--Optional:-->
+               <apellidoPrincipal>LEMA</apellidoPrincipal>
+               <!--Optional:-->
+               <apellidoSecundario>CAGUANA</apellidoSecundario>
+               <!--Optional:-->
+               <nombrePrincipal>FRANCISCO</nombrePrincipal>
+               <!--Optional:-->
+               <nombreSecundario>Miguel</nombreSecundario>
+               <!--Optional:-->
+               <estadoCliente>000</estadoCliente>
+            </datosBasicos>
+            <!--Optional:-->
+            <datosAdicionales>
+               <!--Optional:-->
+               <fechaNacimiento>17091967</fechaNacimiento>
+               <!--Optional:-->
+               <lugarNacimiento>CHIMBORAZO/CHUNCHI/LLAGOS</lugarNacimiento>
+               <!--Optional:-->
+               <genero>1</genero>
+               <!--Optional:-->
+               <estadoCivil>1</estadoCivil>
+               <!--Optional:-->
+               <lugarTrabajo>Quito</lugarTrabajo>
+               <!--Optional:-->
+               <edad>51</edad>
+               <!--Optional:-->
+               <condicionCedulado>1</condicionCedulado>
+               <!--Optional:-->
+               <motivoCreacionCliente>10</motivoCreacionCliente>
+               <!--Optional:-->
+               <nombreApellidoConyuge/>
+               <!--Optional:-->
+               <clienteLlevaContabilidad/>
+            </datosAdicionales>
+            <!--Optional:-->
+            <fatca>
+               <!--Optional:-->
+               <otraNacionalidad>N</otraNacionalidad>
+               <!--Optional:-->
+               <codigoTIN>N</codigoTIN>
+               <!--Optional:-->
+               <cuentaConRepresentanteLegalEEUU/>
+               <!--Optional:-->
+               <obligacionesTributariasExterior>N</obligacionesTributariasExterior>
+               <!--Optional:-->
+               <paisObligacionesTributariasExterior/>
+               <!--Optional:-->
+               <nacionalidad2/>
+               <!--Optional:-->
+               <nacionalidad3/>
+               <!--Optional:-->
+               <direccionCorrespondencia>S</direccionCorrespondencia>
+            </fatca>
+         </bodyIn>
+      </ser:crearCliente24>
+   </soapenv:Body>
+</soapenv:Envelope>
+
 Openshit
 https://console-openshift-console.apps.ocpdev.uiotest.bpichinchatest.test/
 https://console-openshift-console.apps.ocptest.uiotest.bpichinchatest.test/
