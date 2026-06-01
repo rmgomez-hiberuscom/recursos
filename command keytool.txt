@@ -5,7 +5,7 @@
 -storepass changeit ^
 -noprompt
 
-https://tnd-msa-sp-wsclientes0067-enp.apps.ocptest.uiotest.bpichinchatest.test/IntegrationBus/soap/WSClientes0108
+https://tnd-msa-sp-wsclientes0108-enp.apps.ocpdev.uiotest.bpichinchatest.test/IntegrationBus/soap/WSClientes0108
 http://10.60.128.85:2000/IntegrationBus/soap/WSClientes0108
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://bpichincha.com/servicios">
    <soapenv:Header/>
