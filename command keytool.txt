@@ -12,32 +12,32 @@ http://10.60.128.85:2000/IntegrationBus/soap/WSClientes0108
    <soapenv:Body>
       <ser:crearCliente24>
          <headerIn>
-            <dispositivo>01010101010101010101010101010101010101010101</dispositivo>
+            <dispositivo>DEVICE123</dispositivo>
             <empresa>0010</empresa>
             <canal>02</canal>
-            <medio>020007</medio>
-            <aplicacion>00664</aplicacion>
-            <agencia>0012</agencia>
-            <tipoTransaccion>2010010824</tipoTransaccion>
-            <geolocalizacion/>
+            <medio>020002</medio>
+            <aplicacion>00270</aplicacion>
+            <agencia>00012</agencia>
+            <tipoTransaccion>304100111</tipoTransaccion>
+            <geolocalizacion>0,0</geolocalizacion>
             <usuario>USINTERT</usuario>
-            <unicidad/>
-            <guid>3F2504E04F8911D39A0C0305E82C3302</guid>
-            <fechaHora>201902281459012548</fechaHora>
-            <filler/>
-            <idioma>es-EC</idioma>
-            <sesion>zxxxxxxssss</sesion>
-            <ip>10.0.94.183</ip>
-            <idCliente>1004350889</idCliente>
-            <tipoIdCliente/>
+            <unicidad>UZhDOa2GXtkAK2/QovFagnnS+nQSGAF/SKyTIIv1axc=</unicidad>
+            <guid>550e8400e29b41d4a716446655440000</guid>
+            <fechaHora>202603311551000000</fechaHora>
+            <filler>00000000000000000000000000000000000000000000000000</filler>
+            <idioma>es</idioma>
+            <sesion>ASDASD77R01YH</sesion>
+            <ip>127.0.0.1</ip>
+            <idCliente>1711089364</idCliente>
+            <tipoIdCliente>0001</tipoIdCliente>
             <bancs>
-               <teller>100028</teller>
-               <terminal>39</terminal>
-               <institucion>0010</institucion>
-               <agencia>0001</agencia>
-               <estacion>1</estacion>
+               <teller>00070560</teller>
+               <terminal>000001</terminal>
+               <institucion>000001</institucion>
+               <agencia>00012</agencia>
+               <estacion>001</estacion>
                <aplicacion>BEP</aplicacion>
-               <canal>i</canal>
+               <canal>02</canal>
             </bancs>
          </headerIn>
          <bodyIn>
