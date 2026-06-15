@@ -1067,3 +1067,87 @@ y esta es la opción 21  curl --request POST \
   --header 'x-session: abs' \
   --cookie 'dtCookiewh95kubn=v_4_srv_2_sn_5E1C3C3FB68A254150B3230CDAA52468_perc_100000_ol_0_mul_1_app-3Aea7c4b59f27d43eb_1_rcs-3Acss_0; 7435db4d20daed63b0bd6cc2cc8bf1cf=f45a62c510a31f328e8b346f63018337' \
   --data '{"transactionId":"067050","header":{"bancsUser":{"teller":"00070560","terminal":"1","institution":"003","branch":"1","workstation":"1","channel":"02"}},"body":{"accntNumber1":5319747,"defInteger1":21}}'
+
+
+
+WSTecnicos0063
+Request
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://bpichincha.com/servicios">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:obtenerCatalogosSigloBancs01>
+         <headerIn>
+            <dispositivo>as78da98sd698as7d98as7d98</dispositivo>
+            <empresa>0010</empresa>
+            <canal>02</canal>
+            <medio>020002</medio>
+            <aplicacion>00647</aplicacion>
+            <agencia>666</agencia>
+            <tipoTransaccion>202006301</tipoTransaccion>
+            <geolocalizacion>000</geolocalizacion>
+            <usuario>USINTERT</usuario>
+            <unicidad/>
+            <guid>A0S98D7A0SDA0D9AS6DAS7D09AS8D</guid>
+            <fechaHora/>
+            <filler/>
+            <idioma>es-EC</idioma>
+            <sesion>SD70A9S7D9AS7D09A7SD098</sesion>
+            <ip>10.0.0.0</ip>
+            <idCliente/>
+            <tipoIdCliente/>
+         </headerIn>
+         <bodyIn>
+            <tabla>CTYM PAIS FULL OUTER JOIN PROV PROVINCIA ON PAIS.CODE = PROVINCIA.CNTY_CD FULL OUTER JOIN CCOD CIUDAD ON PROVINCIA.PROVINCE = CIUDAD.PROVINCE_CODE</tabla>
+            <tablaAdicional></tablaAdicional>
+            <codigo></codigo>
+            <filtro1></filtro1>
+            <filtro2></filtro2>
+            <filtro3></filtro3>
+            <filtro4></filtro4>
+            <filtro5></filtro5>
+
+         </bodyIn>
+      </ser:obtenerCatalogosSigloBancs01>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Response
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns3:Envelope
+  xmlns:ns2="http://bpichincha.com/servicios"
+  xmlns:ns3="http://schemas.xmlsoap.org/soap/envelope/">
+  <ns3:Body>
+    <ns2:obtenerCatalogosSigloBancs01Response>
+      <headerOut>
+        <dispositivo>as78da98sd698as7d98as7d98</dispositivo>
+        <empresa>0010</empresa>
+        <canal>02</canal>
+        <medio>020002</medio>
+        <aplicacion>00647</aplicacion>
+        <agencia>666</agencia>
+        <tipoTransaccion>202006301</tipoTransaccion>
+        <geolocalizacion>000</geolocalizacion>
+        <usuario>USINTERT</usuario>
+        <unicidad></unicidad>
+        <guid>A0S98D7A0SDA0D9AS6DAS7D09AS8D</guid>
+        <fechaHora></fechaHora>
+        <filler></filler>
+        <idioma>es-EC</idioma>
+        <sesion>SD70A9S7D9AS7D09A7SD098</sesion>
+        <ip>10.0.0.0</ip>
+        <idCliente></idCliente>
+        <tipoIdCliente></tipoIdCliente>
+      </headerOut>
+      <bodyOut/>
+      <error>
+        <codigo>9928</codigo>
+        <mensaje>Header fields are required and cannot be empty</mensaje>
+        <mensajeNegocio></mensajeNegocio>
+        <tipo>ERROR</tipo>
+        <recurso>tia-msa-sp-wstecnicos0063/obtenerCatalogosSigloBancs01</recurso>
+        <componente>tia-msa-sp-wstecnicos0063</componente>
+        <backend>00633</backend>
+      </error>
+    </ns2:obtenerCatalogosSigloBancs01Response>
+  </ns3:Body>
+</ns3:Envelope>
