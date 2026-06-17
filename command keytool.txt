@@ -5,6 +5,8 @@
 -storepass changeit ^
 -noprompt
 
+RG1LdjJUQktBNXVkakthMEdaTUdyWnBRZTJ4QTd2R3N3TE1xd0w3MVFTTWIyazRnOFlMSkpRUUo5OUNGQUNBQUFBQWloQzZ6QUFBU0FaRE80MHZB
+
 http://10.60.128.57:6921/WSProductos0024/soap/WSProductos0024Request
 
 https://tnd-msa-sp-wsclientes0108-enp.apps.ocpdev.uiotest.bpichinchatest.test/IntegrationBus/soap/WSClientes0108
