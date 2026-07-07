@@ -1,3 +1,44 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://bpichincha.com/servicios">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:obtenerCatalogosSigloBancs01>
+         <headerIn>
+            <dispositivo>as78da98sd698as7d98as7d98</dispositivo>
+            <empresa>0010</empresa>
+            <canal>02</canal>
+            <medio>020002</medio>
+            <aplicacion>00647</aplicacion>
+            <agencia>666</agencia>
+            <tipoTransaccion>202006301</tipoTransaccion>
+            <geolocalizacion>000</geolocalizacion>
+            <usuario>USINTERT</usuario>
+            <unicidad/>
+            <guid>A0S98D7A0SDA0D9AS6DAS7D09AS8D</guid>
+            <fechaHora/>
+            <filler/>
+            <idioma>es-EC</idioma>
+            <sesion>SD70A9S7D9AS7D09A7SD098</sesion>
+            <ip>10.0.0.0</ip>
+            <idCliente/>
+            <tipoIdCliente/>
+         </headerIn>
+         <bodyIn>
+            <tabla>CTYM PAIS FULL OUTER JOIN PROV PROVINCIA ON PAIS.CODE = PROVINCIA.CNTY_CD FULL OUTER JOIN CCOD CIUDAD ON PROVINCIA.PROVINCE = CIUDAD.PROVINCE_CODE</tabla>
+            <tablaAdicional></tablaAdicional>
+            <codigo></codigo>
+            <filtro1></filtro1>
+            <filtro2></filtro2>
+            <filtro3></filtro3>
+            <filtro4></filtro4>
+            <filtro5></filtro5>
+
+         </bodyIn>
+      </ser:obtenerCatalogosSigloBancs01>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+
 {
    "transactionId": "060452",
    "success": true,
