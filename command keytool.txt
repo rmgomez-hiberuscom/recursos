@@ -11,6 +11,28 @@ RG1LdjJUQktBNXVkakthMEdaTUdyWnBRZTJ4QTd2R3N3TE1xd0w3MVFTTWIyazRnOFlMSkpRUUo5OUNG
 
 http://10.60.128.57:6921/WSProductos0024/soap/WSProductos0024Request
 
+
+https://tnd-msa-ad-bnc-customers-reference-enp.apps.ocptest.uiotest.bpichinchatest.test/bancs/trx/067218
+{
+   "transactionId" : "067218",
+   "header" : {
+      "bancsUser" : {
+         "terminal" : "1",
+         "institution" : "003",
+         "branch" : 1,
+         "workstation" : 1,
+         "teller" : "00070560",
+         "channel" : "02",
+         "application" : "02"
+      }
+   },
+   "body" : {
+      "custNo" : "7404931",
+      "custRef" : "2",
+      "collection1": []
+   }
+}
+
 https://tnd-msa-sp-wsclientes0108-enp.apps.ocpdev.uiotest.bpichinchatest.test/IntegrationBus/soap/WSClientes0108
 http://10.60.128.85:2000/IntegrationBus/soap/WSClientes0108
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://bpichincha.com/servicios">
@@ -79,7 +101,7 @@ http://10.60.128.85:2000/IntegrationBus/soap/WSClientes0108
                <condicionCedulado>1</condicionCedulado>
                <!--Optional:-->
                <motivoCreacionCliente>10</motivoCreacionCliente>
-               <!--Optional:-->
+
                <nombreApellidoConyuge/>
                <!--Optional:-->
                <clienteLlevaContabilidad/>
