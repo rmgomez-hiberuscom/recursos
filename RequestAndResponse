@@ -1,3 +1,174 @@
+Customers-reference
+https://tnd-msa-ad-bnc-customers-reference-enp.apps.ocptest.uiotest.bpichinchatest.test/bancs/trx/067218
+{
+   "transactionId" : "067218",
+   "header" : {
+      "bancsUser" : {
+         "terminal" : "1",
+         "institution" : "003",
+         "branch" : 1,
+         "workstation" : 1,
+         "teller" : "00070560",
+         "channel" : "02",
+         "application" : "02"
+      }
+   },
+   "body" : {
+      "custNo" : "7404931",
+      "custRef" : "5",
+      "collection1": []
+   }
+}
+
+https://tnd-msa-ad-bnc-customers-reference-enp.apps.ocptest.uiotest.bpichinchatest.test/bancs/trx/067210-5
+{
+   "transactionId" : "067210",
+   "header" : {
+      "bancsUser" : {
+         "terminal" : "1",
+         "institution" : "003",
+         "branch" : 1,
+         "workstation" : 1,
+         "teller" : "00070560",
+         "channel" : "02",
+         "application" : "02"
+      }
+   },
+   "body" : {
+      "custNo" : "7404931",
+      "custRef" : "5",
+      "refInstance" : 80
+   }
+}
+
+https://tnd-msa-ad-bnc-customers-reference-enp.apps.ocptest.uiotest.bpichinchatest.test/bancs/trx/067215
+delete
+{
+   "transactionId" : "067215",
+   "header" : {
+      "bancsUser" : {
+         "terminal" : "1",
+         "institution" : "003",
+         "branch" : 1,
+         "workstation" : 1,
+         "teller" : "00070560",
+         "channel" : "02",
+         "application" : "02"
+      }
+   },
+   "body" : {
+      "custNo": 7404931,
+      "custRef": "2",
+      "refInstance": 66,
+      "conttellerupd": 70560,
+      "contlastupddt": "21072026",
+      "status1": "99",
+      "cclimit": 0,
+      "ccno": "",
+      "ccname": "",
+      "cctype": ""
+   }
+}
+
+add
+{
+   "transactionId" : "067215",
+   "header" : {
+      "bancsUser" : {
+         "terminal" : "1",
+         "institution" : "003",
+         "branch" : 1,
+         "workstation" : 1,
+         "teller" : "00070560",
+         "channel" : "02",
+         "application" : "02"
+      }
+   },
+   "body" : {
+      "custNo": 7404931,
+      "custRef": "2",
+      "refInstance": 68, 
+      "conttellerupd": 70560,
+      "contlastupddt": "21072026",
+      "status1": "00",
+      "cclimit": 1500,
+      "ccno": "235454545454",
+      "ccname": "VISA.BHSQhve7HQR6CJcry8TC",
+      "cctype": "1"
+   }
+}
+
+https://tnd-msa-ad-bnc-customers-reference-enp.apps.ocpdev.uiotest.bpichinchatest.test/bancs/trx/067216
+{
+   "transactionId" : "067216",
+   "header" : {
+      "bancsUser" : {
+         "terminal" : "1",
+         "institution" : "003",
+         "branch" : 1,
+         "workstation" : 1,
+         "teller" : "00070560",
+         "channel" : "02",
+         "application" : "02"
+      }
+   },
+   "body" : {
+      "custNo": 7404931,
+      "custRef": "4",
+      "refInstance": 10,
+      "refidcard": "0001",
+      "idcardnum": null,
+      "custname": "ANA LOPEZ",
+      "relationtype": "HERMANA",
+      "add1": "AV PRINCIPAL 123",
+      "add2": null,
+      "add3": null,
+      "phoneno": "5930995554444",
+      "city": "1701",
+      "state": "17",
+      "country": "EC",
+      "conttellerupd": 70560,
+      "contlastupddt": "17072026",
+      "status1": "99"
+   }
+}
+
+https://tnd-msa-ad-bnc-customers-reference-enp.apps.ocptest.uiotest.bpichinchatest.test/bancs/trx/067214
+{
+   "transactionId" : "067214",
+   "header" : {
+      "bancsUser" : {
+         "terminal" : "1",
+         "institution" : "003",
+         "branch" : 1,
+         "workstation" : 1,
+         "teller" : "00070560",
+         "channel" : "02",
+         "application" : "02"
+      }
+   },
+   "body" : {
+      "custNo": 7404931,
+      "custRef": "3",
+      "refInstance": 14,
+      "refidcard": null,
+      "idcardnum": "1790234567001",
+      "custname": "PROVEEDOR ABC CIA LTDA",
+      "relationtype": null,
+      "add1": null,
+      "add2": null,
+      "add3": null,
+      "phoneno": "5930224455667",
+      "city": "1701",
+      "state": "10",
+      "country": "EC",
+      "conttellerupd": 70560,
+      "contlastupddt": "21072026",
+      "status1": "99"
+   }
+}
+
+
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://bpichincha.com/servicios">
    <soapenv:Header/>
    <soapenv:Body>
