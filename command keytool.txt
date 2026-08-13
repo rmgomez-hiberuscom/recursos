@@ -5,6 +5,8 @@
 -storepass changeit ^
 -noprompt
 
+http://10.60.128.57:6921/WSProductos0024/soap/WSProductos0024Request 
+
 snyk token
 snyk_uat.1fcad39e.eyJlIjoxNzkwNzk0OTgwLCJoIjoic255ay5pbyIsImoiOiJBWi01ajljczFvbm5tRHJhX3dOSzVRIiwicyI6IkRqR3dIcnZEU2Z1SXRoem9aVjhjSnciLCJ0aWQiOiJBQUFBQUFBQUFBQUFBQUFBQUFBQUFBIn0.MjBSxkL4kmeMi5fakkv_TFeIvsGnxDyVdcsLQrgJHfe7SvdywlsrkmD9Oja3-XNEOCJYZQiNqA3ot-CpiS0HDg
 
