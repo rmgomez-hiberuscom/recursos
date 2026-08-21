@@ -1,3 +1,587 @@
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'management.endpoints.web-org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointProperties'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointAutoConfiguration' via constructor to bean named 'org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@3efe7086'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointAutoConfiguration' via constructor to bean named 'management.endpoints.web-org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointProperties'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'endpointOperationParameterMapper'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.endpoint.EndpointAutoConfiguration'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'endpointMediaTypes'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'webEndpointDiscoverer' via factory method to bean named 'endpointOperationParameterMapper'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'webEndpointDiscoverer' via factory method to bean named 'endpointMediaTypes'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'webEndpointPathMapper'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'endpointCachingOperationInvokerAdvisor'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'endpointCachingOperationInvokerAdvisor' via factory method to bean named 'environment'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'webExposeExcludePropertyEndpointFilter'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'webAccessPropertiesOperationFilter'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'propertiesEndpointAccessResolver'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'propertiesEndpointAccessResolver' via factory method to bean named 'environment'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'webAccessPropertiesOperationFilter' via factory method to bean named 'propertiesEndpointAccessResolver'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'healthEndpointWebFluxHandlerMapping' via factory method to bean named 'webEndpointDiscoverer'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'healthEndpointWebFluxHandlerMapping' via factory method to bean named 'healthEndpointGroups'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'healthEndpoint'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'healthEndpoint' via factory method to bean named 'healthContributorRegistry'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'healthEndpoint' via factory method to bean named 'healthEndpointGroups'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'healthEndpoint' via factory method to bean named 'management.endpoint.health-org.springframework.boot.actuate.autoconfigure.health.HealthEndpointProperties'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'prometheusEndpoint'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.metrics.export.prometheus.PrometheusMetricsExportAutoConfiguration$PrometheusScrapeEndpointConfiguration'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'prometheusEndpoint' via factory method to bean named 'prometheusRegistry'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'prometheusEndpoint' via factory method to bean named 'prometheusConfig'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'reactiveHealthEndpointWebExtension'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.health.HealthEndpointReactiveWebExtensionConfiguration'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'reactiveHealthContributorRegistry'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.health.ReactiveHealthEndpointConfiguration'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'reactiveHealthContributorRegistry' via factory method to bean named 'livenessStateHealthIndicator'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'reactiveHealthContributorRegistry' via factory method to bean named 'readinessStateHealthIndicator'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'reactiveHealthContributorRegistry' via factory method to bean named 'sslHealthIndicator'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'reactiveHealthContributorRegistry' via factory method to bean named 'diskSpaceHealthIndicator'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'reactiveHealthContributorRegistry' via factory method to bean named 'pingHealthContributor'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'reactiveHealthContributorRegistry' via factory method to bean named 'healthEndpointGroups'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'reactiveHealthEndpointWebExtension' via factory method to bean named 'reactiveHealthContributorRegistry'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'reactiveHealthEndpointWebExtension' via factory method to bean named 'healthEndpointGroups'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'reactiveHealthEndpointWebExtension' via factory method to bean named 'management.endpoint.health-org.springframework.boot.actuate.autoconfigure.health.HealthEndpointProperties'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'infoEndpoint'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.info.InfoEndpointAutoConfiguration'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'buildInfoContributor'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.info.InfoContributorAutoConfiguration'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'buildProperties'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' via constructor to bean named 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'buildInfoContributor' via factory method to bean named 'buildProperties'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricsEndpoint'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.metrics.MetricsEndpointAutoConfiguration'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'metricsEndpoint' via factory method to bean named 'prometheusMeterRegistry'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'webEndpointReactiveHandlerMapping'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.endpoint.web.reactive.WebFluxEndpointManagementContextConfiguration'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'controllerEndpointDiscoverer'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'controllerExposeExcludePropertyEndpointFilter'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'management.endpoints.web.cors-org.springframework.boot.actuate.autoconfigure.endpoint.web.CorsEndpointProperties'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'webEndpointReactiveHandlerMapping' via factory method to bean named 'webEndpointDiscoverer'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'webEndpointReactiveHandlerMapping' via factory method to bean named 'controllerEndpointDiscoverer'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'webEndpointReactiveHandlerMapping' via factory method to bean named 'endpointMediaTypes'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'webEndpointReactiveHandlerMapping' via factory method to bean named 'management.endpoints.web.cors-org.springframework.boot.actuate.autoconfigure.endpoint.web.CorsEndpointProperties'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'webEndpointReactiveHandlerMapping' via factory method to bean named 'management.endpoints.web-org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointProperties'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'webEndpointReactiveHandlerMapping' via factory method to bean named 'environment'
+2026-08-20 19:47:15 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.a.e.w.r.WebFluxEndpointHandlerMapping - 7 mappings in 'webEndpointReactiveHandlerMapping'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'controllerEndpointHandlerMapping'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'controllerEndpointHandlerMapping' via factory method to bean named 'controllerEndpointDiscoverer'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'controllerEndpointHandlerMapping' via factory method to bean named 'management.endpoints.web.cors-org.springframework.boot.actuate.autoconfigure.endpoint.web.CorsEndpointProperties'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'controllerEndpointHandlerMapping' via factory method to bean named 'management.endpoints.web-org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointProperties'
+2026-08-20 19:47:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'controllerEndpointHandlerMapping' via factory method to bean named 'propertiesEndpointAccessResolver'
+2026-08-20 19:47:15 [main] INFO  com.pichincha.sp.Application - Started Application in 4.119 seconds (process running for 4.717)
+2026-08-20 19:47:15 [main] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2026-08-20 19:47:15 [main] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG i.n.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@18c91cf5
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG r.n.http.server.HttpServerOperations - [43461dfd, L:/127.0.0.1:8080 - R:/127.0.0.1:55794] New http connection, requesting read
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConfig - [43461dfd, L:/127.0.0.1:8080 - R:/127.0.0.1:55794] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpServerCodec), (reactor.left.httpTrafficHandler = reactor.netty.http.server.HttpTrafficHandler), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.chunkSize: 32
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.blocking: false
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG r.n.http.server.HttpServerOperations - [43461dfd, L:/127.0.0.1:8080 - R:/127.0.0.1:55794] Increasing pending responses count: 1
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG r.netty.http.server.HttpServer - [43461dfd-1, L:/127.0.0.1:8080 - R:/127.0.0.1:55794] Handler is being applied: org.springframework.http.server.reactive.ReactorHttpHandlerAdapter@12832d7d
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'httpHandler'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.reactive.HttpHandlerAutoConfiguration$AnnotationConfig'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.reactive.HttpHandlerAutoConfiguration$AnnotationConfig' via constructor to bean named 'org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@3efe7086'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'webHandler'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'requestMappingHandlerAdapter'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'webFluxAdapterRegistry'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'webFluxConversionService'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'webFluxValidator'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'webFluxAdapterRegistry'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'serverCodecConfigurer'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'webFluxConversionService'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'webFluxContentTypeResolver'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'webFluxValidator'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'handlerFunctionAdapter'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'simpleHandlerAdapter'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'webFluxWebSocketHandlerAdapter'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'responseEntityResultHandler'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'responseEntityResultHandler' via factory method to bean named 'webFluxAdapterRegistry'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'responseEntityResultHandler' via factory method to bean named 'serverCodecConfigurer'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'responseEntityResultHandler' via factory method to bean named 'webFluxContentTypeResolver'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'responseBodyResultHandler'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'responseBodyResultHandler' via factory method to bean named 'webFluxAdapterRegistry'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'responseBodyResultHandler' via factory method to bean named 'serverCodecConfigurer'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'responseBodyResultHandler' via factory method to bean named 'webFluxContentTypeResolver'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'viewResolutionResultHandler'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'viewResolutionResultHandler' via factory method to bean named 'webFluxAdapterRegistry'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'viewResolutionResultHandler' via factory method to bean named 'webFluxContentTypeResolver'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'serverResponseResultHandler'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'serverResponseResultHandler' via factory method to bean named 'serverCodecConfigurer'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'additionalContactsXmlWrapperFilter'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'wsclientes0034-com.pichincha.sp.domain.config.WsClientes0034Properties'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'additionalContactsXmlWrapperFilter' via constructor to bean named 'wsclientes0034-com.pichincha.sp.domain.config.WsClientes0034Properties'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'reactiveRequestInformationExtractor'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'request'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'reactiveRequestInformationExtractor' via constructor to bean named 'request'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'webHeaderForwardFilter'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'com.pichincha.propagation.filter.FilterConfiguration'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'optimus.web.headers-com.pichincha.propagation.properties.HeaderProperties'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'webHeaderForwardFilter' via factory method to bean named 'optimus.web.headers-com.pichincha.propagation.properties.HeaderProperties'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG c.p.p.properties.HeaderProperties - Configured Header: x-app by: com.pichincha.propagation.properties.HeaderProperties$HeaderConfig@5a5489bf
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG c.p.p.properties.HeaderProperties - Configured Header: x-guid by: com.pichincha.propagation.properties.HeaderProperties$HeaderConfig@30b934a3
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG c.p.p.properties.HeaderProperties - Configured Header: x-channel by: com.pichincha.propagation.properties.HeaderProperties$HeaderConfig@536dc1dd
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG c.p.p.properties.HeaderProperties - Configured Header: x-medium by: com.pichincha.propagation.properties.HeaderProperties$HeaderConfig@5777bc84
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG c.p.p.properties.HeaderProperties - Configured Header: x-session by: com.pichincha.propagation.properties.HeaderProperties$HeaderConfig@2910dea4
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG c.p.p.properties.HeaderProperties - Configured Header: x-device by: com.pichincha.propagation.properties.HeaderProperties$HeaderConfig@5075eb09
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG c.p.p.properties.HeaderProperties - Configured Header: x-device-ip by: com.pichincha.propagation.properties.HeaderProperties$HeaderConfig@6dababf3
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG c.p.p.properties.HeaderProperties - Configured Header: x-agency by: com.pichincha.propagation.properties.HeaderProperties$HeaderConfig@7d2b95e
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG c.p.p.properties.HeaderProperties - Configured Header: x-geolocation by: com.pichincha.propagation.properties.HeaderProperties$HeaderConfig@2898a2fe
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Found key 'optimus.web.filter.excluded-path-patterns.defaults' in PropertySource 'environmentProperties' with value of type String
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'requestBancsUserExtractorFilter'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'com.pichincha.bnc.apiclient.autoconfigure.BancsClientAutoConfiguration'
+2026-08-20 19:47:51 [reactor-http-nio-2] INFO  c.p.b.a.c.f.RequestBancsUserExtractorFilter - RequestBancsUserExtractorFilter was enabled
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'errorResolverHandler'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'unexpectedErrorResolver'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'errorResolverHandler' via constructor to bean named 'unexpectedErrorResolver'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'responseStatusExceptionHandler'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'observationRegistry'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.observation.ObservationAutoConfiguration'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'propertiesObservationFilter'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'propertiesObservationFilter' via factory method to bean named 'management.observations-org.springframework.boot.actuate.autoconfigure.observation.ObservationProperties'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricsObservationHandlerGrouping'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.observation.ObservationAutoConfiguration$OnlyMetricsConfiguration'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'defaultMeterObservationHandler'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.observation.ObservationAutoConfiguration$MeterObservationHandlerConfiguration$OnlyMetricsMeterObservationHandlerConfiguration'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'defaultMeterObservationHandler' via factory method to bean named 'prometheusMeterRegistry'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'defaultMeterObservationHandler' via factory method to bean named 'management.observations-org.springframework.boot.actuate.autoconfigure.observation.ObservationProperties'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'defaultServerRequestObservationConvention'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'webSessionManager'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'webSessionIdResolver'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.reactive.WebSessionIdResolverAutoConfiguration'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.reactive.WebSessionIdResolverAutoConfiguration' via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.reactive.WebSessionIdResolverAutoConfiguration' via constructor to bean named 'spring.webflux-org.springframework.boot.autoconfigure.web.reactive.WebFluxProperties'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'localeContextResolver'
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [43461dfd-1] HTTP POST "/IntegrationBus/soap/WSClientes0034"
+2026-08-20 19:47:51 [reactor-http-nio-2] DEBUG reactor.netty.channel.FluxReceive - [43461dfd-1, L:/127.0.0.1:8080 - R:/127.0.0.1:55794] [terminated=false, cancelled=false, pending=0, error=null]: subscribing inbound receiver
+2026-08-20 19:47:51 [reactor-http-nio-2] WARN  c.p.p.f.i.WebFilterHeaderForwardPropagator - Header x-app for propagation not found
+2026-08-20 19:47:51 [reactor-http-nio-2] WARN  c.p.p.f.i.WebFilterHeaderForwardPropagator - Header x-agency for propagation not found
+2026-08-20 19:47:51 [reactor-http-nio-2] WARN  c.p.p.f.i.WebFilterHeaderForwardPropagator - Header x-channel for propagation not found
+2026-08-20 19:47:51 [reactor-http-nio-2] WARN  c.p.p.f.i.WebFilterHeaderForwardPropagator - Header x-guid for propagation not found
+2026-08-20 19:47:51 [reactor-http-nio-2] WARN  c.p.p.f.i.WebFilterHeaderForwardPropagator - Header x-session for propagation not found
+2026-08-20 19:47:51 [reactor-http-nio-2] WARN  c.p.p.f.i.WebFilterHeaderForwardPropagator - Header x-device for propagation not found
+2026-08-20 19:47:51 [reactor-http-nio-2] WARN  c.p.p.f.i.WebFilterHeaderForwardPropagator - Header x-medium for propagation not found
+2026-08-20 19:47:51 [reactor-http-nio-2] WARN  c.p.p.f.i.WebFilterHeaderForwardPropagator - Header x-geolocation for propagation not found
+2026-08-20 19:47:51 [reactor-http-nio-2] WARN  c.p.p.f.i.WebFilterHeaderForwardPropagator - Header x-device-ip for propagation not found
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG c.p.b.a.c.filters.SoapBancsExtractor - bancsHeaders: BancsHeaders[bancsUser=BancsUser(teller=00070560, terminal=000001, institution=000001, branch=00012, workstation=001, channel=02, application=BEP), homologateUser=null, optionalHeader=null]
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'wsClientes0034Controller'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'wsClientes0034SoapOperationDispatcher'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'queryAdditionalContactsService'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tx067050Adapter'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'com.pichincha.bnc.apiclient.autoconfigure.WebClientAutoConfiguration'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'bancs-com.pichincha.bnc.apiclient.properties.webclient.BancsWebClientProperties'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.AbstractConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.AbstractConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.r.TraversableResolvers - Cannot find jakarta.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'com.pichincha.bnc.apiclient.autoconfigure.WebClientAutoConfiguration' via constructor to bean named 'bancs-com.pichincha.bnc.apiclient.properties.webclient.BancsWebClientProperties'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG i.n.handler.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+2026-08-20 19:47:52 [boundedElastic-1] WARN  c.p.b.a.a.BancsClientAutoConfiguration - No circuit breaker found for service: 'customers-profile'. Proceeding without circuit breaker. Ensure that a circuit breaker is properly configured under 'resilience4j.circuitbreaker.bancs-client.instances' with the name 'customers-profile'.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'bancsValidator'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'com.pichincha.bnc.apiclient.mappers.BancsHeadersMapperImpl'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'bancsValidator' via factory method to bean named 'com.pichincha.bnc.apiclient.mappers.BancsHeadersMapperImpl'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tx067050MapperImpl'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'customLogLevelHandler'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'customLogLevelHandlerConfiguration'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'traceLoggerCustomLevelProperties'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.AbstractConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.AbstractConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.r.TraversableResolvers - Cannot find jakarta.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'customLogLevelHandlerConfiguration' via constructor to bean named 'traceLoggerCustomLevelProperties'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'tx067050Adapter' via constructor to bean named 'bancsClient'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'tx067050Adapter' via constructor to bean named 'tx067050MapperImpl'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'tx067050Adapter' via constructor to bean named 'customLogLevelHandler'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'tx067050Adapter' via constructor to bean named 'wsclientes0034-com.pichincha.sp.domain.config.WsClientes0034Properties'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'queryAdditionalContactsService' via constructor to bean named 'tx067050Adapter'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'queryAdditionalContactsService' via constructor to bean named 'customLogLevelHandler'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'queryAdditionalContactsService' via constructor to bean named 'wsclientes0034-com.pichincha.sp.domain.config.WsClientes0034Properties'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'createOrUpdateAdditionalContactService'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tx067125Adapter'
+2026-08-20 19:47:52 [boundedElastic-1] WARN  c.p.b.a.a.BancsClientAutoConfiguration - No circuit breaker found for service: 'customers-profile'. Proceeding without circuit breaker. Ensure that a circuit breaker is properly configured under 'resilience4j.circuitbreaker.bancs-client.instances' with the name 'customers-profile'.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tx067125MapperImpl'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'tx067125Adapter' via constructor to bean named 'bancsClient'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'tx067125Adapter' via constructor to bean named 'tx067125MapperImpl'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'tx067125Adapter' via constructor to bean named 'customLogLevelHandler'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'tx067125Adapter' via constructor to bean named 'wsclientes0034-com.pichincha.sp.domain.config.WsClientes0034Properties'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tx067126Adapter'
+2026-08-20 19:47:52 [boundedElastic-1] WARN  c.p.b.a.a.BancsClientAutoConfiguration - No circuit breaker found for service: 'customers-profile'. Proceeding without circuit breaker. Ensure that a circuit breaker is properly configured under 'resilience4j.circuitbreaker.bancs-client.instances' with the name 'customers-profile'.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tx067126MapperImpl'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'tx067126Adapter' via constructor to bean named 'bancsClient'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'tx067126Adapter' via constructor to bean named 'tx067126MapperImpl'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'tx067126Adapter' via constructor to bean named 'customLogLevelHandler'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'tx067126Adapter' via constructor to bean named 'wsclientes0034-com.pichincha.sp.domain.config.WsClientes0034Properties'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'createOrUpdateAdditionalContactService' via constructor to bean named 'tx067050Adapter'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'createOrUpdateAdditionalContactService' via constructor to bean named 'tx067125Adapter'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'createOrUpdateAdditionalContactService' via constructor to bean named 'tx067126Adapter'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'createOrUpdateAdditionalContactService' via constructor to bean named 'wsclientes0034-com.pichincha.sp.domain.config.WsClientes0034Properties'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'deleteAdditionalContactService'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'deleteAdditionalContactService' via constructor to bean named 'tx067050Adapter'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'deleteAdditionalContactService' via constructor to bean named 'tx067125Adapter'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'deleteAdditionalContactService' via constructor to bean named 'tx067126Adapter'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'deleteAdditionalContactService' via constructor to bean named 'wsclientes0034-com.pichincha.sp.domain.config.WsClientes0034Properties'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'queryContactsContractMapperImpl'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'createOrUpdateContactsContractMapperImpl'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'deleteContactsContractMapperImpl'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'soapContractSupport'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'genericHeaderMapperImpl'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'soapContractSupport' via constructor to bean named 'genericHeaderMapperImpl'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'soapContractSupport' via constructor to bean named 'wsclientes0034-com.pichincha.sp.domain.config.WsClientes0034Properties'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'wsClientes0034RequestValidator'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'wsClientes0034RequestValidator' via constructor to bean named 'wsclientes0034-com.pichincha.sp.domain.config.WsClientes0034Properties'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'wsClientes0034SoapOperationDispatcher' via constructor to bean named 'queryAdditionalContactsService'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'wsClientes0034SoapOperationDispatcher' via constructor to bean named 'createOrUpdateAdditionalContactService'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'wsClientes0034SoapOperationDispatcher' via constructor to bean named 'deleteAdditionalContactService'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'wsClientes0034SoapOperationDispatcher' via constructor to bean named 'queryContactsContractMapperImpl'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'wsClientes0034SoapOperationDispatcher' via constructor to bean named 'createOrUpdateContactsContractMapperImpl'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'wsClientes0034SoapOperationDispatcher' via constructor to bean named 'deleteContactsContractMapperImpl'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'wsClientes0034SoapOperationDispatcher' via constructor to bean named 'soapContractSupport'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'wsClientes0034SoapOperationDispatcher' via constructor to bean named 'wsClientes0034RequestValidator'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'wsClientes0034SoapOperationDispatcher' via constructor to bean named 'wsclientes0034-com.pichincha.sp.domain.config.WsClientes0034Properties'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'wsClientes0034Controller' via constructor to bean named 'wsClientes0034SoapOperationDispatcher'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'wsClientes0034Controller' via constructor to bean named 'wsclientes0034-com.pichincha.sp.domain.config.WsClientes0034Properties'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [43461dfd-1] Mapped to com.pichincha.sp.infrastructure.input.adapter.rest.impl.WsClientes0034Controller#procesarOperacion(SoapEnvelopeRequestDto)
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [43461dfd-1] Content-Type:text/xml;charset=UTF-8
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [43461dfd-1] 0..1 [com.pichincha.sp.infrastructure.input.adapter.rest.dto.SoapEnvelopeRequestDto]
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'traceInterceptor'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'traceFlowCoordinator'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'executionTimer'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'traceContextFactory'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'traceProcessorFactory'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'blockingTraceProcessor'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tracingEventHandler'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tracingEventPipelineFactory'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'encryptTraceableEventBuilder'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'spELTraceValueResolver'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'spELTraceValueResolver' via constructor to bean named 'org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@3efe7086'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'payloadFieldExtractor'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'traceLoggerPayloadProperties'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.AbstractConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.AbstractConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.r.TraversableResolvers - Cannot find jakarta.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'fieldExtractorFactory'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jsonFieldExtractor'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'jsonFieldExtractor' via constructor to bean named 'jacksonObjectMapper'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'xmlFieldExtractor'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'fieldExtractorFactory' via constructor to bean named 'jsonFieldExtractor'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'fieldExtractorFactory' via constructor to bean named 'xmlFieldExtractor'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'xmlMapper'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'com.pichincha.common.trace.logger.autoconfigure.TraceLoggerAutoConfiguration'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'exclusionOperation'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'extractionOperation'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'payloadFieldExtractor' via constructor to bean named 'traceLoggerPayloadProperties'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'payloadFieldExtractor' via constructor to bean named 'fieldExtractorFactory'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'payloadFieldExtractor' via constructor to bean named 'jacksonObjectMapper'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'payloadFieldExtractor' via constructor to bean named 'xmlMapper'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'payloadFieldExtractor' via constructor to bean named 'exclusionOperation'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'payloadFieldExtractor' via constructor to bean named 'extractionOperation'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metadataEnricher'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metadataExtractor'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'traceLoggerMetadataProperties'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.AbstractConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.AbstractConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.r.TraversableResolvers - Cannot find jakarta.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jsonMetadataValueExtractor'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'jsonMetadataValueExtractor' via constructor to bean named 'jacksonObjectMapper'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'xmlMetadataValueExtractor'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'metadataExtractor' via constructor to bean named 'traceLoggerMetadataProperties'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'metadataExtractor' via constructor to bean named 'jacksonObjectMapper'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'metadataExtractor' via constructor to bean named 'xmlMapper'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'metadataExtractor' via constructor to bean named 'jsonMetadataValueExtractor'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'metadataExtractor' via constructor to bean named 'xmlMetadataValueExtractor'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'metadataEnricher' via constructor to bean named 'metadataExtractor'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'encryptTraceableEventBuilder' via constructor to bean named 'spELTraceValueResolver'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'encryptTraceableEventBuilder' via constructor to bean named 'payloadFieldExtractor'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'encryptTraceableEventBuilder' via constructor to bean named 'metadataEnricher'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'loggerEventBuilder'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'loggerEventBuilder' via constructor to bean named 'spELTraceValueResolver'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'traceableEventBuilder'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'traceableEventBuilder' via constructor to bean named 'spELTraceValueResolver'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'traceableEventBuilder' via constructor to bean named 'payloadFieldExtractor'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'traceableEventBuilder' via constructor to bean named 'metadataEnricher'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'tracingEventPipelineFactory' via constructor to bean named 'encryptTraceableEventBuilder'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'tracingEventPipelineFactory' via constructor to bean named 'loggerEventBuilder'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'tracingEventPipelineFactory' via constructor to bean named 'traceableEventBuilder'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'tracingEventHandler' via constructor to bean named 'tracingEventPipelineFactory'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'blockingTraceProcessor' via constructor to bean named 'tracingEventHandler'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'exceptionTraceProcessor'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'exceptionTraceProcessor' via constructor to bean named 'tracingEventHandler'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'fluxTraceProcessor'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'fluxTraceProcessor' via constructor to bean named 'tracingEventHandler'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'monoTraceProcessor'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'monoTraceProcessor' via constructor to bean named 'tracingEventHandler'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'traceProcessorFactory' via constructor to bean named 'blockingTraceProcessor'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'traceProcessorFactory' via constructor to bean named 'exceptionTraceProcessor'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'traceProcessorFactory' via constructor to bean named 'fluxTraceProcessor'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'traceProcessorFactory' via constructor to bean named 'monoTraceProcessor'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'traceFlowCoordinator' via constructor to bean named 'executionTimer'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'traceFlowCoordinator' via constructor to bean named 'traceContextFactory'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'traceFlowCoordinator' via constructor to bean named 'traceProcessorFactory'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'traceLoggerProperties'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.AbstractConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.AbstractConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.r.TraversableResolvers - Cannot find jakarta.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'traceInterceptor' via constructor to bean named 'traceFlowCoordinator'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'traceInterceptor' via constructor to bean named 'traceLoggerProperties'
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [43461dfd-1] Using 'text/xml;charset=utf-8' given [*/*] and supported [text/xml;charset=utf-8, application/xml]
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [43461dfd-1] 0..1 [com.pichincha.sp.infrastructure.input.adapter.rest.dto.SoapEnvelopeResponseDto]
+2026-08-20 19:47:52 [boundedElastic-1] WARN  c.p.b.a.a.BancsClientCircuitBreaker - No CircuitBreaker found for service: 'customers-profile'. Proceeding without circuit breaker.
+2026-08-20 19:47:52 [boundedElastic-1] WARN  c.p.b.a.a.BancsClientCircuitBreaker - No CircuitBreaker found for service: 'customers-profile'. Proceeding without circuit breaker.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG c.p.b.a.v.BancsHeadersValidator - Starting validation of bancs userBancsUser(teller=00070560, terminal=000001, institution=000001, branch=00012, workstation=001, channel=02, application=BEP)
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG c.p.b.a.adapter.BancsClientExecutor - Invoking Bancs service for transactionId: 067050: bancs teller: 00070560
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG o.s.w.r.f.client.ExchangeFunctions - [59936e84] HTTP POST https://tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/bancs/trx/067050-14
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG io.netty.handler.ssl.OpenSsl - netty-tcnative not in the classpath; OpenSslEngine will be unavailable.
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG io.netty.handler.ssl.JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG io.netty.handler.ssl.JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG i.netty.resolver.dns.DnsNameResolver - Default ResolvedAddressTypes: IPV4_ONLY
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG i.netty.resolver.dns.DnsNameResolver - Windows hostname: vm-prv116qa-0
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG i.netty.resolver.dns.DnsNameResolver - Default search domains: []
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG i.netty.resolver.dns.DnsNameResolver - Default UnixResolverOptions{ndots=1, timeout=5, attempts=16}
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG i.n.r.DefaultHostsFileEntriesResolver - -Dio.netty.hostsFileRefreshInterval: 0
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG i.n.r.d.DefaultDnsServerAddressStreamProvider - Default DNS servers: [/10.219.0.9:53, /10.219.0.8:53, /10.10.39.20:53] (sun.net.dns.ResolverConfiguration)
+2026-08-20 19:47:52 [boundedElastic-1] DEBUG r.n.r.PooledConnectionProvider - Creating a new [customers-profile] client pool [PoolFactory{evictionInterval=PT0S, leasingStrategy=fifo, maxConnections=32, maxIdleTime=10000, maxLifeTime=-1, metricsEnabled=false, pendingAcquireMaxCount=-1, pendingAcquireTimeout=2000}] for [tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/<unresolved>:443]
+2026-08-20 19:47:52 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [4bf86455] Created a new pooled channel, now: 0 active connections, 0 inactive connections 0 pending acquire requests.
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG reactor.netty.tcp.SslProvider - [4bf86455] SSL enabled using engine SSLEngine[hostname=tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test, port=443, Session(1787273273003|SSL_NULL_WITH_NULL_NULL)] and SNI tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/<unresolved>:443
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConfig - [4bf86455] Initialized pipeline DefaultChannelPipeline{(reactor.left.sslHandler = io.netty.handler.ssl.SslHandler), (reactor.left.sslReader = reactor.netty.tcp.SslProvider$SslReadHandler), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG i.n.r.dns.DnsNameResolverBuilder - resolveCache and TTLs are mutually exclusive. TTLs are ignored.
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG i.n.r.dns.DnsNameResolverBuilder - cnameCache and TTLs are mutually exclusive. TTLs are ignored.
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG i.n.r.dns.DnsNameResolverBuilder - authoritativeDnsServerCache and TTLs are mutually exclusive. TTLs are ignored.
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG i.n.b.ChannelInitializerExtensions - -Dio.netty.bootstrap.extensions: null
+2026-08-20 19:47:53 [reactor-http-nio-3] DEBUG i.n.resolver.dns.DnsResolveContext - -Dio.netty.resolver.dns.tryCnameOnAddressLookups: false
+2026-08-20 19:47:53 [reactor-http-nio-3] DEBUG i.netty.resolver.dns.DnsQueryContext - -Dio.netty.resolver.dns.idReuseOnTimeoutDelayMillis: 10000
+2026-08-20 19:47:53 [reactor-http-nio-3] DEBUG i.n.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6ac2475f
+2026-08-20 19:47:53 [reactor-http-nio-3] DEBUG i.netty.resolver.dns.DnsQueryContext - [id: 0x7a5e1582, L:/[0:0:0:0:0:0:0:0]:50281] WRITE: UDP, [14601: /10.219.0.9:53], DefaultDnsQuestion(tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test. IN A)
+2026-08-20 19:47:53 [reactor-http-nio-3] DEBUG i.netty.resolver.dns.DnsNameResolver - [id: 0x7a5e1582, L:/[0:0:0:0:0:0:0:0]:50281] RECEIVED: UDP [14601: /10.219.0.9:53], DatagramDnsResponse(from: /10.219.0.9:53, to: /[0:0:0:0:0:0:0:0]:50281, id: 14601, QUERY(0), NoError(0), RD RA)
+        DefaultDnsQuestion(tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test. IN A)
+        DefaultDnsRawRecord(tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test. 3599 IN A 4B)
+        DefaultDnsRawRecord(OPT flags:0 udp:4000 0B)
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConnector - [4bf86455] Connecting to [tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443].
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG r.n.r.DefaultPooledConnectionProvider - [4bf86455, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443] Registering pool release on close event for channel
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [4bf86455, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443] Channel connected, now: 1 active connections, 0 inactive connections 0 pending acquire requests.
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG io.netty.handler.ssl.SslHandler - [id: 0x4bf86455, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443] HANDSHAKEN: protocol:TLSv1.3 cipher suite:TLS_AES_128_GCM_SHA256
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG r.n.r.DefaultPooledConnectionProvider - [4bf86455, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443] onStateChange(PooledConnection{channel=[id: 0x4bf86455, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443]}, [connected])
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG r.n.r.DefaultPooledConnectionProvider - [4bf86455-1, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0x4bf86455, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443]}}, [configured])
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG r.n.http.client.HttpClientConnect - [4bf86455-1, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443] Handler is being applied: {uri=https://tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/bancs/trx/067050-14, method=POST}
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG r.n.r.DefaultPooledConnectionProvider - [4bf86455-1, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443] onStateChange(POST{uri=/bancs/trx/067050-14, connection=PooledConnection{channel=[id: 0x4bf86455, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443]}}, [request_prepared])
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG o.s.h.codec.json.Jackson2JsonEncoder - [59936e84] Encoding [BancsRequest(transactionId=067050, header=BancsHeaders[bancsUser=BancsUser(teller=00070560, terminal (truncated)...]
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG r.n.r.DefaultPooledConnectionProvider - [4bf86455-1, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443] onStateChange(POST{uri=/bancs/trx/067050-14, connection=PooledConnection{channel=[id: 0x4bf86455, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443]}}, [request_sent])
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG r.n.http.client.HttpClientOperations - [4bf86455-1, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443] Added encoder [reactor.left.responseTimeoutHandler] at the beginning of the user pipeline, full pipeline: [reactor.left.sslHandler, reactor.left.responseTimeoutHandler, reactor.left.httpCodec, reactor.left.httpDecompressor, reactor.right.reactiveBridge, DefaultChannelPipeline$TailContext#0]
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG i.n.handler.codec.compression.Zstd - zstd-jni not in the classpath; Zstd support will be unavailable.
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG r.n.http.client.HttpClientOperations - [4bf86455-1, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443] Received response (auto-read:false) : RESPONSE(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+content-type: <filtered>
+content-length: <filtered>
+set-cookie: <filtered>
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG r.n.r.DefaultPooledConnectionProvider - [4bf86455-1, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443] onStateChange(POST{uri=/bancs/trx/067050-14, connection=PooledConnection{channel=[id: 0x4bf86455, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443]}}, [response_received])
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG o.s.w.r.f.client.ExchangeFunctions - [59936e84] [4bf86455-1, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443] Response 200 OK
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG reactor.netty.channel.FluxReceive - [4bf86455-1, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443] [terminated=false, cancelled=false, pending=0, error=null]: subscribing inbound receiver
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG r.n.http.client.HttpClientOperations - [4bf86455-1, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443] Received last HTTP packet
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG o.s.h.codec.json.Jackson2JsonDecoder - [59936e84] [4bf86455-1, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443] Decoded [BancsResponse[transactionId=067125, success=true, body=com.pichincha.sp.infrastructure.output.adapte (truncated)...]
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG c.p.b.a.adapter.BancsClientAdapter - Bancs Adapter time taken: 910ms. For transactionId: 067050 bancs teller:00070560
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG o.s.w.r.f.client.ExchangeFunctions - [59936e84] Cancel signal (to close connection)
+2026-08-20 19:47:53 [reactor-http-nio-4] ERROR c.p.s.i.e.e.r.UnexpectedErrorResolver - Unexpected error
+java.lang.NullPointerException
+        at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+        Suppressed: The stacktrace has been enhanced by Reactor, refer to additional information below: 
+Error has been observed at the following site(s):
+        *__checkpoint Γçó Handler com.pichincha.sp.infrastructure.input.adapter.rest.impl.WsClientes0034Controller#procesarOperacion(SoapEnvelopeRequestDto) [DispatcherHandler]
+        *__checkpoint Γçó com.pichincha.bnc.apiclient.config.filters.RequestBancsUserExtractorFilter [DefaultWebFilterChain]
+        *__checkpoint Γçó com.pichincha.propagation.filter.impl.WebFilterHeaderForwardPropagator [DefaultWebFilterChain]
+        *__checkpoint Γçó com.pichincha.common.trace.logger.extractor.request.information.reactive.ReactiveRequestInformationExtractor [DefaultWebFilterChain]
+        *__checkpoint Γçó com.pichincha.sp.infrastructure.input.adapter.rest.filter.AdditionalContactsXmlWrapperFilter [DefaultWebFilterChain]
+        *__checkpoint Γçó HTTP POST "/IntegrationBus/soap/WSClientes0034" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+                at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+                at java.base/java.util.Optional.of(Optional.java:113)
+                at java.base/java.util.stream.FindOps$FindSink$OfRef.get(FindOps.java:194)
+                at java.base/java.util.stream.FindOps$FindSink$OfRef.get(FindOps.java:191)
+                at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+                at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+                at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+                at com.pichincha.sp.infrastructure.output.adapter.mapper.Tx067125Mapper.slotValue(Tx067125Mapper.java:48)
+                at com.pichincha.sp.infrastructure.output.adapter.mapper.Tx067125MapperImpl.toTechnical(Tx067125MapperImpl.java:34)
+                at com.pichincha.sp.infrastructure.output.adapter.Tx067125Adapter.execute(Tx067125Adapter.java:43)
+                at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+                at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+                at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+                at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+                at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+                at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+                at io.vavr.control.Try.of(Try.java:74)
+                at com.pichincha.common.trace.logger.trace.flow.TraceFlowCoordinator.execute(TraceFlowCoordinator.java:39)
+                at com.pichincha.common.trace.logger.trace.flow.TraceFlowCoordinator.lambda$handle$0(TraceFlowCoordinator.java:27)
+                at com.pichincha.common.trace.logger.timer.ExecutionTimer.execute(ExecutionTimer.java:17)
+                at com.pichincha.common.trace.logger.trace.flow.TraceFlowCoordinator.handle(TraceFlowCoordinator.java:26)
+                at com.pichincha.common.trace.logger.interceptor.TraceInterceptor.handleLogger(TraceInterceptor.java:43)
+                at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+                at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+                at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649)
+                at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631)
+                at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+                at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+                at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+                at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+                at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+                at com.pichincha.sp.infrastructure.output.adapter.Tx067125Adapter$$SpringCGLIB$$0.execute(<generated>)
+                at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:132)
+                at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+                at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+                at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+                at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+                at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+                at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+                at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+                at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
+                at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+                at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
+                at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:158)
+                at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+                at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+                at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+                at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854)
+                at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294)
+                at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188)
+                at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondComplete(MonoFlatMap.java:245)
+                at reactor.core.publisher.MonoFlatMap$FlatMapInner.onNext(MonoFlatMap.java:305)
+                at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+                at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:158)
+                at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+                at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+                at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+                at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2096)
+                at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+                at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+                at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+                at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+                at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:413)
+                at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:464)
+                at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:518)
+                at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:933)
+                at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115)
+                at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+                at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+                at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+                at io.netty.handler.codec.http.HttpContentDecoder.decode(HttpContentDecoder.java:166)
+                at io.netty.handler.codec.http.HttpContentDecoder.decode(HttpContentDecoder.java:48)
+                at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:91)
+                at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+                at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+                at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+                at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+                at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:361)
+                at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:325)
+                at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+                at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+                at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+                at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+                at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:289)
+                at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+                at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+                at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+                at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1519)
+                at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1377)
+                at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1428)
+                at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:545)
+                at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:484)
+                at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+                at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+                at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+                at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+                at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+                at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+                at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+                at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+                at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:171)
+                at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:796)
+                at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:732)
+                at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:658)
+                at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+                at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+                at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+                at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+                at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-08-20 19:47:53 [tracing-parallel-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'env'
+2026-08-20 19:47:53 [tracing-parallel-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'env' via constructor to bean named 'environment'
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG r.n.http.server.HttpServerOperations - [43461dfd-1, L:/127.0.0.1:8080 - R:/127.0.0.1:55794] Last HTTP response frame
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG r.n.http.server.HttpServerOperations - [43461dfd-1, L:/127.0.0.1:8080 - R:/127.0.0.1:55794] Headers are not sent before onComplete().
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [43461dfd-1] Completed 500 INTERNAL_SERVER_ERROR
+2026-08-20 19:47:53 [reactor-http-nio-2] DEBUG r.n.http.server.HttpServerOperations - [43461dfd-1, L:/127.0.0.1:8080 - R:/127.0.0.1:55794] Decreasing pending responses count: 0
+2026-08-20 19:47:53 [reactor-http-nio-2] DEBUG r.n.http.server.HttpServerOperations - [43461dfd-1, L:/127.0.0.1:8080 - R:/127.0.0.1:55794] Last HTTP packet was sent, terminating the channel
+2026-08-20 19:47:53 [reactor-http-nio-2] DEBUG r.netty.channel.ChannelOperations - [43461dfd-1, L:/127.0.0.1:8080 - R:/127.0.0.1:55794] [HttpServer] Channel inbound receiver cancelled (subscription disposed).
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG r.n.r.DefaultPooledConnectionProvider - [4bf86455, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443] onStateChange(POST{uri=/bancs/trx/067050-14, connection=PooledConnection{channel=[id: 0x4bf86455, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443]}}, [response_completed])
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG reactor.netty.ReactorNetty - [4bf86455, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443] Removed handler: reactor.left.responseTimeoutHandler, pipeline: DefaultChannelPipeline{(reactor.left.sslHandler = io.netty.handler.ssl.SslHandler), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG r.n.r.DefaultPooledConnectionProvider - [4bf86455, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443] onStateChange(POST{uri=/bancs/trx/067050-14, connection=PooledConnection{channel=[id: 0x4bf86455, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443]}}, [disconnecting])
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG r.n.r.DefaultPooledConnectionProvider - [4bf86455, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443] Releasing channel
+2026-08-20 19:47:53 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [4bf86455, L:/10.163.223.228:55800 - R:tnd-msa-ad-bnc-customers-profile-enp.apps.ocpdev.uiotest.bpichinchatest.test/10.162.13.126:443] Channel cleaned, now: 0 active connections, 1 inactive connections 0 pending acquire requests.
+2026-08-20 19:47:53 [tracing-parallel-1] INFO  c.p.c.t.l.t.e.TracingEventHandler - {"type":"APPLICATION","data":{"date":"2026-08-20 19:47:53.655 -0500","args":{"request":{"customerId":"0000000004685732","profileOption":"14","instance":""}},"time":28,"clazz":"Tx067050Adapter","method":"queryMobile","response":{"title":"0","extraFieldOne":null,"extraFieldTwo":null,"extraFieldThree":"MABE S.A.","operationOption":null,"additionType":"05","slots":[{"position":1,"value":"5930984181247"},{"position":2,"value":"0999999998"},{"position":3,"value":null},{"position":4,"value":null},{"position":5,"value":null},{"position":6,"value":null},{"position":7,"value":null}]},"component":"tnd-msa-sp-wsclientes0034"}}
+2026-08-20 19:47:53 [tracing-parallel-2] INFO  c.p.c.t.l.t.e.TracingEventHandler - {"type":"APPLICATION","data":{"date":"2026-08-20 19:47:53.655 -0500","args":{"request":{"customerId":"0000000004685732","title":"0","extraFieldOne":null,"extraFieldTwo":null,"extraFieldThree":"MABE S.A.","operationOption":"A","additionType":"05","mobileSlots":[{"position":1,"value":"0999999988"},{"position":2,"value":"0999999998"},{"position":3,"value":null},{"position":4,"value":null},{"position":5,"value":null},{"position":6,"value":null},{"position":7,"value":null}]}},"time":2,"clazz":"Tx067125Adapter","method":"execute","response":{"date":"Aug 20, 2026, 7:47:53ΓÇ»PM","line":"233","clazz":"java.util.Objects","method":"requireNonNull","message":null,"exceptionName":"NullPointerException","messageDetails":{"NullPointerException":[null]}},"component":"tnd-msa-sp-wsclientes0034"}}
+2026-08-20 19:47:53 [tracing-parallel-1] INFO  c.p.c.t.l.t.e.TracingEventHandler - {"type":"APPLICATION","data":{"date":"2026-08-20 19:47:53.707 -0500","args":{"request":{"customerReference":{"cif":"0000000004685732"},"emails":[{"identifier":"1","address":"algoMM1@gmail.com"}],"mobiles":[{"identifier":"1","number":"0999999988"}],"operationType":"M"}},"time":2,"clazz":"CreateOrUpdateAdditionalContactService","method":"save","response":{"date":"Aug 20, 2026, 7:47:53ΓÇ»PM","line":"233","clazz":"java.util.Objects","method":"requireNonNull","message":null,"exceptionName":"NullPointerException","messageDetails":{"NullPointerException":[null]}},"component":"tnd-msa-sp-wsclientes0034"}}
+2026-08-20 19:47:53 [tracing-parallel-2] INFO  c.p.c.t.l.t.e.TracingEventHandler - {"type":"TRANSACTIONAL","data":{"id":"d2a3ec31-cd1d-4adb-9dcc-2705619b5fd7","app":null,"guid":null,"date":"2026-08-20 19:47:53.712 -0500","medium":null,"session":null,"channel":null,"requestId":null,"component":"tnd-msa-sp-wsclientes0034","requestUri":"http://localhost:8080/IntegrationBus/soap/WSClientes0034","requestBody":null,"protocolType":"HTTP","responseTime":12,"responseBody":null,"requestParams":{},"requestMethod":"POST","requestHeaders":{"Accept-Encoding":"gzip,deflate","Content-Type":"text/xml;charset=UTF-8","SOAPAction":"\"http://bpichincha.com/servicios/crearModificarContactoAdicional33\"","Content-Length":"2201","Host":"localhost:8080","Connection":"Keep-Alive","User-Agent":"Apache-HttpClient/4.5.5 (Java/17.0.12)"},"metadata":null}}
+
+
 orqproductos0045
 request
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://bpichincha.com/servicios">
