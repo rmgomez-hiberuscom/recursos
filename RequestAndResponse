@@ -1,4 +1,230 @@
 wsclientes0021
+request exito
+{
+   "transactionId" : "067118",
+   "header" : {
+      "bancsUser" : {
+         "teller" : "00070560",
+         "terminal" : "1",
+         "institution" : "003",
+         "branch" : "1",
+         "workstation" : "1",
+         "channel" : "02"
+      }
+   },
+   "body" : {
+      "accntNumber1" : 1491636,
+      "date1" : "+10007-06-07T05:00:00.000+00:00",
+      "date2" : "+10007-06-07T05:00:00.000+00:00",
+      "defaultString1" : "0",
+      "defaultString2" : "00",
+      "defaultString3" : "70",
+      "defaultString4" : "007",
+      "defaultString5" : null,
+      "defaultString6" : null,
+      "defaultString7" : null,
+      "defaultString8" : null,
+      "defaultString9" : null,
+      "defaultString10" : null,
+      "defaultString11" : 0.00,
+      "date3" : "+10007-06-07T05:00:00.000+00:00",
+      "defaultString12" : 1.424,
+      "defaultString13" : 1421100001100.00,
+      "defaultString14" : "00000+00000+",
+      "defaultString15" : 0.00,
+      "defaultString16" : 1100001100.00,
+      "defaultString17" : 1100001100.00,
+      "defaultString18" : 1100001100.00,
+      "defaultString19" : 1100001100.00,
+      "defaultString20" : "00",
+      "typeasst1" : "",
+      "typeasst2" : "",
+      "typeasst3" : "",
+      "cntasst1" : null,
+      "cntasst2" : null,
+      "cntasst3" : null,
+      "prvasst1" : null,
+      "prvasst2" : null,
+      "prvasst3" : null,
+      "cityasst1" : null,
+      "cityasst2" : null,
+      "cityasst3" : null,
+      "valuation1" : 0.00,
+      "valuation2" : 1100001100.00,
+      "valuation3" : 1100001100.00,
+      "brand1" : "00000+",
+      "brand2" : null,
+      "brand3" : null,
+      "model1" : null,
+      "model2" : null,
+      "model3" : null,
+      "vehval1" : 0.00,
+      "vehval2" : 1100001100.00,
+      "vehval3" : 1100001100.00,
+      "defaultString29" : "00",
+      "defaultString30" : "00070560",
+      "date4" : "2026-08-27T05:00:00.000+00:00",
+      "othbrand1" : null,
+      "othbrand2" : null,
+      "othbrand3" : null,
+      "othmodel1" : null,
+      "othmodel2" : null,
+      "othmodel3" : null,
+      "othval1" : 0.00,
+      "othval2" : 1100001100.00,
+      "othval3" : 1100001100.00,
+      "detothexp" : "00000+00000+",
+      "salescost" : 0.00,
+      "opcharges" : 1100001100.00
+   }
+}
+
+{
+   "transactionId": "067118",
+   "success": true,
+   "body":    {
+      "firstFilter": "0000",
+      "secondFilter": "O.K.",
+      "accountNumber": null,
+      "customerNumber": null,
+      "receiptData": "000 O.K."
+   },
+   "error": null
+}
+
+<NS1:Envelope xmlns:NS1="http://schemas.xmlsoap.org/soap/envelope/">
+   <NS1:Body>
+      <NS2:ProcesarDatosBienesCliente31Response xmlns:NS2="http://bpichincha.com/servicios">
+         <headerOut>
+            <dispositivo>01010101010101010101010101010101010101010</dispositivo>
+            <empresa>0010</empresa>
+            <canal>03</canal>
+            <medio>030001</medio>
+            <aplicacion>00663</aplicacion>
+            <agencia>12</agencia>
+            <tipoTransaccion>201007231</tipoTransaccion>
+            <geolocalizacion/>
+            <usuario>USINTERT</usuario>
+            <unicidad/>
+            <guid>3F2504E04F8911D39A0C0305E82C3302</guid>
+            <fechaHora>201902281459012548</fechaHora>
+            <filler/>
+            <idioma>es-EC</idioma>
+            <sesion>ASFGD1234DFG</sesion>
+            <ip>172.10.125.223</ip>
+            <idCliente/>
+            <tipoIdCliente/>
+            <bancs>
+               <teller>00070560</teller>
+               <terminal>1</terminal>
+               <institucion>0010</institucion>
+               <agencia>0001</agencia>
+               <estacion>1</estacion>
+               <aplicacion/>
+               <canal/>
+            </bancs>
+            <documento>
+               <fechaContable/>
+               <numeroDocumento/>
+               <journals>
+                  <journal>
+                     <valor/>
+                  </journal>
+               </journals>
+            </documento>
+         </headerOut>
+         <bodyOut>
+            <bienes>
+               <bienesInmuebles>
+                  <bienesInmueble>
+                     <tipo>10</tipo>
+                     <pais/>
+                     <provincia/>
+                     <ciudad/>
+                     <avaluo>0.00</avaluo>
+                     <identificador>1</identificador>
+                     <accion/>
+                  </bienesInmueble>
+                  <bienesInmueble>
+                     <tipo>0+</tipo>
+                     <pais/>
+                     <provincia/>
+                     <ciudad/>
+                     <avaluo>1100000000.00</avaluo>
+                     <identificador>2</identificador>
+                     <accion/>
+                  </bienesInmueble>
+                  <bienesInmueble>
+                     <tipo>00</tipo>
+                     <pais/>
+                     <provincia/>
+                     <ciudad/>
+                     <avaluo>1101100000000.00</avaluo>
+                     <identificador>3</identificador>
+                     <accion/>
+                  </bienesInmueble>
+               </bienesInmuebles>
+               <vehiculos>
+                  <vehiculo>
+                     <marcaModelio>01100+00000+</marcaModelio>
+                     <anio/>
+                     <avaluo>0.00</avaluo>
+                     <identificador>1</identificador>
+                     <accion/>
+                  </vehiculo>
+                  <vehiculo>
+                     <marcaModelio/>
+                     <anio/>
+                     <avaluo>1100000000.00</avaluo>
+                     <identificador>2</identificador>
+                     <accion/>
+                  </vehiculo>
+                  <vehiculo>
+                     <marcaModelio/>
+                     <anio/>
+                     <avaluo>1101100000000.00</avaluo>
+                     <identificador>3</identificador>
+                     <accion/>
+                  </vehiculo>
+               </vehiculos>
+               <otrosBienes>
+                  <otroBien>
+                     <descripcion/>
+                     <informacionAdicional/>
+                     <avaluo>0.00</avaluo>
+                     <identificador>1</identificador>
+                     <accion/>
+                  </otroBien>
+                  <otroBien>
+                     <descripcion/>
+                     <informacionAdicional/>
+                     <avaluo>1100000000.00</avaluo>
+                     <identificador>2</identificador>
+                     <accion/>
+                  </otroBien>
+                  <otroBien>
+                     <descripcion/>
+                     <informacionAdicional/>
+                     <avaluo>1101100000000.00</avaluo>
+                     <identificador>3</identificador>
+                     <accion/>
+                  </otroBien>
+               </otrosBienes>
+            </bienes>
+         </bodyOut>
+         <error>
+            <codigo>0</codigo>
+            <mensaje>TCSBRKR1_BP-OK</mensaje>
+            <mensajeNegocio/>
+            <tipo>INFO</tipo>
+            <recurso>WSClientes0021/ProcesarDatosBienesCliente31</recurso>
+            <componente>WSClientes0021</componente>
+            <backend>00638</backend>
+         </error>
+      </NS2:ProcesarDatosBienesCliente31Response>
+   </NS1:Body>
+</NS1:Envelope>
+
 Request bancs con error
 {
    "transactionId" : "067118",
