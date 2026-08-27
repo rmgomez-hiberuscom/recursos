@@ -1,4 +1,94 @@
 wsclientes0021
+Request bancs con error
+{
+   "transactionId" : "067118",
+   "header" : {
+      "bancsUser" : {
+         "teller" : "00070560",
+         "terminal" : "1",
+         "institution" : "003",
+         "branch" : "1",
+         "workstation" : "1",
+         "channel" : "02"
+      }
+   },
+   "body" : {
+      "accntNumber1" : 1491636,
+      "date1" : "+10007-06-07T05:00:00.000+00:00",
+      "date2" : "+10007-06-07T05:00:00.000+00:00",
+      "defaultString1" : "0",
+      "defaultString2" : "00",
+      "defaultString3" : "70",
+      "defaultString4" : "007",
+      "defaultString5" : null,
+      "defaultString6" : null,
+      "defaultString7" : null,
+      "defaultString8" : null,
+      "defaultString9" : null,
+      "defaultString10" : null,
+      "defaultString11" : 0.00,
+      "date3" : "+10007-06-07T05:00:00.000+00:00",
+      "defaultString12" : 1.424,
+      "defaultString13" : 1421100001100.00,
+      "defaultString14" : "00000+00000+",
+      "defaultString15" : 0.00,
+      "defaultString16" : 1100001100.00,
+      "defaultString17" : 1100001100.00,
+      "defaultString18" : 1100001100.00,
+      "defaultString19" : 1100001100.00,
+      "defaultString20" : "00",
+      "typeasst1" : "00",
+      "typeasst2" : "0+",
+      "typeasst3" : "00",
+      "cntasst1" : null,
+      "cntasst2" : null,
+      "cntasst3" : null,
+      "prvasst1" : null,
+      "prvasst2" : null,
+      "prvasst3" : null,
+      "cityasst1" : null,
+      "cityasst2" : null,
+      "cityasst3" : null,
+      "valuation1" : 0.00,
+      "valuation2" : 1100001100.00,
+      "valuation3" : 1100001100.00,
+      "brand1" : "00000+",
+      "brand2" : null,
+      "brand3" : null,
+      "model1" : null,
+      "model2" : null,
+      "model3" : null,
+      "vehval1" : 0.00,
+      "vehval2" : 1100001100.00,
+      "vehval3" : 1100001100.00,
+      "defaultString29" : "00",
+      "defaultString30" : "00070560",
+      "date4" : "2026-08-27T05:00:00.000+00:00",
+      "othbrand1" : null,
+      "othbrand2" : null,
+      "othbrand3" : null,
+      "othmodel1" : null,
+      "othmodel2" : null,
+      "othmodel3" : null,
+      "othval1" : 0.00,
+      "othval2" : 1100001100.00,
+      "othval3" : 1100001100.00,
+      "detothexp" : "00000+00000+",
+      "salescost" : 0.00,
+      "opcharges" : 1100001100.00
+   }
+}
+
+{
+   "transactionId": "067118",
+   "success": false,
+   "body": null,
+   "error":    {
+      "code": "1059",
+      "message": "CÃ“DIGO DE NACIONALIDAD INVÃ�LIDO"
+   }
+}
+
 bancs
 {
    "transactionId": "067118",
