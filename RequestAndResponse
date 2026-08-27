@@ -1,4 +1,42 @@
 wsclientes0021
+log
+2026-08-27 10:13:36 [boundedElastic-1] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2026-08-27 10:13:36 [boundedElastic-1] INFO  c.p.s.i.i.a.r.f.WSClientes0021OperationRouter - {"timestamp":"2026-08-27 10:13:36.466 -0500","level":"INFO","data":{"header":"<soapenv:Header xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ser=\"http://bpichincha.com/servicios\"/>","body":{"procesarDatosBienesCliente31":{"bodyIn":{"informacionActivos":{"bienes":{"bienesInmuebles":{"bienesInmuebles":[{"accion":"","avaluo":"","ciudad":"","identificador":"","pais":"","provincia":"","tipo":""}]},"otrosBienes":{"otroBiens":[{"accion":"B","avaluo":"10000001","descripcion":"DEPARTAMENTO","identificador":"1","informacionAdicional":""}]},"vehiculos":{"vehiculos":[{"accion":"","anio":"","avaluo":"","identificador":"","marcaModelio":""}]}},"cif":"1491636","operacion":"1"}},"headerIn":{"agencia":"12","aplicacion":"00663","bancs":{"agencia":"0001","aplicacion":"","canal":"","estacion":"1","institucion":"0010","teller":"00070560","terminal":"1"},"canal":"03","dispositivo":"01010101010101010101010101010101010101010","empresa":"0010","fechaHora":"201902281459012548","filler":"","geolocalizacion":"","guid":"3F2504E04F8911D39A0C0305E82C3302","idCliente":"","idioma":"es-EC","ip":"172.10.125.223","medio":"030001","sesion":"ASFGD1234DFG","tipoIdCliente":"","tipoTransaccion":"201007231","unicidad":"","usuario":"USINTERT"}}}},"clazz":"com.pichincha.sp.infrastructure.input.adapter.rest.factory.WSClientes0021OperationRouter","method":"log","message":"SOAP request start"}
+2026-08-27 10:13:36 [boundedElastic-1] WARN  c.p.b.a.r.a.BancsClientCircuitBreaker - No CircuitBreaker found for service: 'customers-profile'. Proceeding without circuit breaker.
+2026-08-27 10:13:36 [boundedElastic-1] WARN  c.p.b.a.r.a.BancsClientCircuitBreaker - No CircuitBreaker found for service: 'customers-profile'. Proceeding without circuit breaker.
+2026-08-27 10:13:36 [boundedElastic-1] WARN  c.p.b.a.r.a.BancsClientCircuitBreaker - No CircuitBreaker found for service: 'customers-profile'. Proceeding without circuit breaker.
+2026-08-27 10:13:36 [boundedElastic-1] DEBUG c.p.b.a.c.v.BancsUserValidator - Starting validation of bancs userBancsUser(teller=00070560, terminal=1, institution=0010, branch=0001, workstation=1, channel=, application=)
+2026-08-27 10:13:36 [boundedElastic-1] DEBUG c.p.b.a.r.a.BancsClientExecutor - Invoking Bancs service for transactionId: 067050: bancs teller: 00070560
+2026-08-27 10:13:37 [reactor-http-nio-5] DEBUG c.p.b.a.r.adapter.BancsClientAdapter - Bancs Adapter time taken: 913ms. For transactionId: 067050 bancs teller:00070560
+2026-08-27 10:13:37 [reactor-http-nio-5] WARN  c.p.b.a.r.a.BancsClientCircuitBreaker - No CircuitBreaker found for service: 'customers-profile'. Proceeding without circuit breaker.
+2026-08-27 10:13:37 [reactor-http-nio-5] DEBUG c.p.b.a.c.v.BancsUserValidator - Starting validation of bancs userBancsUser(teller=00070560, terminal=1, institution=3, branch=0001, workstation=1, channel=y, application=0)
+2026-08-27 10:13:37 [reactor-http-nio-5] DEBUG c.p.b.a.r.a.BancsClientExecutor - Invoking Bancs service for transactionId: 067118: bancs teller: 00070560
+2026-08-27 10:13:37 [reactor-http-nio-5] INFO  UnknownClass - {"timestamp":"2026-08-27 10:13:37.462 -0500","level":"INFO","data":"onComplete","clazz":"UnknownClass","method":"UnknownMethod","message":"BANCS adapter flow finished"}
+2026-08-27 10:13:37 [tracing-parallel-1] INFO  c.p.c.t.l.a.t.e.TracingEventHandler - {"type":"APPLICATION","data":{"date":"2026-08-27 10:13:37.494 -0500","args":{"cif":"1491636","option":"20"},"time":14,"clazz":"Tx067050Adapter","method":"queryAssets","response":{"accountNumber1":"*******","date1":"+10007-06-07T05:00:00.000+00:00","date2":"+10007-06-07T05:00:00.000+00:00","defaultString1":"0","defaultString2":"00","defaultString3":"7","defaultString11":"0.000","date3":"+10007-06-07T05:00:00.000+00:00","defaultString12":"1.420","defaultString13":"1100000000.000","defaultString14":"00000+","defaultString15":"0.000","defaultString16":"1100000000.000","defaultString17":"1100000000.000","defaultString18":"1100000000.000","defaultString19":"1100000000.000","defaultString20":"00","typeasst1":"","typeasst2":"","valuation1":"0.000","valuation2":"1100000000.000","valuation3":"1100000000.000","brand1":"","vehval1":"0.000","vehval2":"1100000000.000","vehval3":"1100000000.000","defaultString29":"00","defaultString30":"00070560","date4":"2026-08-26T05:00:00.000+00:00","othbrand1":"","othmodel1":"","othval1":"0.00","othval2":"1100000000.000","othval3":"1100000000.000","detothexp":"00000+","salescost":"0.000","opcharges":"1100000000.000"},"component":"tpr-msa-sp-wsclientes0021"}}
+2026-08-27 10:13:37 [reactor-http-nio-5] DEBUG c.p.b.a.r.adapter.BancsClientAdapter - Bancs Adapter time taken: 271ms. For transactionId: 067118 bancs teller:00070560
+2026-08-27 10:13:37 [reactor-http-nio-5] DEBUG c.p.b.a.c.v.BancsUserValidator - Starting validation of bancs userBancsUser(teller=00070560, terminal=1, institution=3, branch=0001, workstation=1, channel=y, application=0)
+2026-08-27 10:13:37 [reactor-http-nio-5] DEBUG c.p.b.a.r.a.BancsClientExecutor - Invoking Bancs service for transactionId: 067050: bancs teller: 00070560
+2026-08-27 10:13:37 [reactor-http-nio-5] INFO  UnknownClass - {"timestamp":"2026-08-27 10:13:37.736 -0500","level":"INFO","data":"onComplete","clazz":"UnknownClass","method":"UnknownMethod","message":"BANCS adapter flow finished"}
+2026-08-27 10:13:37 [tracing-parallel-2] INFO  c.p.c.t.l.a.t.e.TracingEventHandler - {"type":"APPLICATION","data":{"date":"2026-08-27 10:13:37.733 -0500","args":{"request":{"accountNumber1":"*******","date1":"+10007-06-07T05:00:00.000+00:00","date2":"+10007-06-07T05:00:00.000+00:00","defaultString1":"0","defaultString2":"00","defaultString3":"7","defaultString11":"0.000","date3":"+10007-06-07T05:00:00.000+00:00","defaultString12":"1.420","defaultString13":"1100000000.000","defaultString14":"00000+","defaultString15":"0.000","defaultString16":"1100000000.000","defaultString17":"1100000000.000","defaultString18":"1100000000.000","defaultString19":"1100000000.000","defaultString20":"00","typeasst1":"","typeasst2":"","valuation1":"0.000","valuation2":"1100000000.000","valuation3":"1100000000.000","brand1":"","vehval1":"0.000","vehval2":"1100000000.000","vehval3":"1100000000.000","defaultString29":"00","defaultString30":"00070560","date4":"2026-08-26T05:00:00.000+00:00","othbrand1":"","othmodel1":"","othval1":"0.00","othval2":"1100000000.000","othval3":"1100000000.000","detothexp":"00000+","salescost":"0.000","opcharges":"1100000000.000"}},"time":1,"clazz":"Tx067118Adapter","method":"update","response":{"firstFilter":"0000","secondFilter":"O.K.","accountNumber":null,"customerNumber":null,"receiptData":"000 O.K."},"component":"tpr-msa-sp-wsclientes0021"}}
+2026-08-27 10:13:37 [reactor-http-nio-5] DEBUG c.p.b.a.r.adapter.BancsClientAdapter - Bancs Adapter time taken: 1421ms. For transactionId: 067050 bancs teller:00070560
+2026-08-27 10:13:37 [reactor-http-nio-5] WARN  c.p.b.a.r.a.BancsClientCircuitBreaker - No CircuitBreaker found for service: 'customers-profile'. Proceeding without circuit breaker.
+2026-08-27 10:13:37 [reactor-http-nio-5] DEBUG c.p.b.a.c.v.BancsUserValidator - Starting validation of bancs userBancsUser(teller=00070560, terminal=1, institution=3, branch=0001, workstation=1, channel=y, application=0)
+2026-08-27 10:13:37 [reactor-http-nio-5] DEBUG c.p.b.a.r.a.BancsClientExecutor - Invoking Bancs service for transactionId: 067116: bancs teller: 00070560
+2026-08-27 10:13:37 [reactor-http-nio-5] INFO  UnknownClass - {"timestamp":"2026-08-27 10:13:37.970 -0500","level":"INFO","data":"onComplete","clazz":"UnknownClass","method":"UnknownMethod","message":"BANCS adapter flow finished"}
+2026-08-27 10:13:37 [tracing-parallel-1] INFO  c.p.c.t.l.a.t.e.TracingEventHandler - {"type":"APPLICATION","data":{"date":"2026-08-27 10:13:37.967 -0500","args":{"cif":"1491636","option":"21"},"time":1,"clazz":"Tx067050Adapter","method":"queryProfile","response":{"accountNumber1":"*******","date1":"99999999","date2":"99999999","date3":"99999999","custage":"0","date4":"99999999","date5":"99999999","totalasset":"0.000","prodassets":"0.000","totalliability":"0.000","annualsales":"0.000","annualexpenditure":"0.000","subscribedpaidcap":"0.000","date6":"99999999","totalequity":"0.000","date7":"99999999","date8":"99999999","usernamelastcustupdt":"00070560","date9":"99999999","decsettle":"0","date10":"99999999","date11":"99999999","arrearbal":"0.000","totalarrearsdirect":"0.000","totalmonthlyinstallment":"0.000","date12":"99999999","date13":"99999999","shareperc":"0","directport":"0.000","totalport":"0.000","commdirectport":"0.000","date14":"99999999","lastupdteller":"70560","date15":"26082026","noOfEmployees":"0","date16":"99999999","propRelCom":"7"},"component":"tpr-msa-sp-wsclientes0021"}}
+2026-08-27 10:13:38 [reactor-http-nio-5] DEBUG c.p.b.a.r.adapter.BancsClientAdapter - Bancs Adapter time taken: 249ms. For transactionId: 067116 bancs teller:00070560
+2026-08-27 10:13:38 [reactor-http-nio-5] DEBUG c.p.b.a.c.v.BancsUserValidator - Starting validation of bancs userBancsUser(teller=00070560, terminal=1, institution=3, branch=0001, workstation=1, channel=y, application=0)
+2026-08-27 10:13:38 [reactor-http-nio-5] DEBUG c.p.b.a.r.a.BancsClientExecutor - Invoking Bancs service for transactionId: 067050: bancs teller: 00070560
+2026-08-27 10:13:38 [reactor-http-nio-5] INFO  UnknownClass - {"timestamp":"2026-08-27 10:13:38.220 -0500","level":"INFO","data":"onComplete","clazz":"UnknownClass","method":"UnknownMethod","message":"BANCS adapter flow finished"}
+2026-08-27 10:13:38 [tracing-parallel-2] INFO  c.p.c.t.l.a.t.e.TracingEventHandler - {"type":"APPLICATION","data":{"date":"2026-08-27 10:13:38.218 -0500","args":{"request":{"accountNumber1":"*******","date1":"99999999","date2":"99999999","date3":"99999999","custage":"0","date4":"99999999","date5":"99999999","totalasset":"0.000","prodassets":"0.000","totalliability":"0.000","annualsales":"0.000","annualexpenditure":"0.000","subscribedpaidcap":"0.000","date6":"99999999","totalequity":"0.000","date7":"99999999","date8":"99999999","usernamelastcustupdt":"00070560","date9":"99999999","decsettle":"0","date10":"99999999","date11":"99999999","arrearbal":"0.000","totalarrearsdirect":"0.000","totalmonthlyinstallment":"0.000","date12":"99999999","date13":"99999999","shareperc":"0","directport":"0.000","totalport":"0.000","commdirectport":"0.000","date14":"99999999","lastupdteller":"70560","date15":"26082026","noOfEmployees":"0","date16":"99999999","propRelCom":"7"}},"time":2,"clazz":"Tx067116Adapter","method":"update","response":{"firstFilter":"0000","secondFilter":"O.K.","accountNumber":null,"customerNumber":null,"receiptData":"000 O.K."},"component":"tpr-msa-sp-wsclientes0021"}}
+2026-08-27 10:13:38 [reactor-http-nio-5] DEBUG c.p.b.a.r.adapter.BancsClientAdapter - Bancs Adapter time taken: 1894ms. For transactionId: 067050 bancs teller:00070560
+2026-08-27 10:13:38 [tracing-parallel-1] INFO  c.p.c.t.l.a.t.e.TracingEventHandler - {"type":"APPLICATION","data":{"date":"2026-08-27 10:13:38.439 -0500","args":{"cif":"1491636","option":"20"},"time":0,"clazz":"Tx067050Adapter","method":"queryAssets","response":{"accountNumber1":"*******","date1":"+10007-06-07T05:00:00.000+00:00","date2":"+10007-06-07T05:00:00.000+00:00","defaultString1":"0","defaultString2":"00","defaultString3":"70","defaultString4":"007","defaultString11":"0.000","date3":"+10007-06-07T05:00:00.000+00:00","defaultString12":"11000700000000.000","defaultString13":"1421100001100.000","defaultString14":"00000+00000+","defaultString15":"0.000","defaultString16":"1100001100.000","defaultString17":"1100001100.000","defaultString18":"1100001100.000","defaultString19":"1100001100.000","defaultString20":"00","typeasst1":"","typeasst2":"","typeasst3":"","valuation1":"0.000","valuation2":"1100001100.000","valuation3":"1100001100.000","brand1":"","vehval1":"0.000","vehval2":"1100001100.000","vehval3":"1100001100.000","defaultString29":"00","defaultString30":"00070560","date4":"2026-08-27T05:00:00.000+00:00","othbrand1":"082026","othval1":"0.000","othval2":"1100001100.000","othval3":"1100001100.000","detothexp":"00000+00000+","salescost":"0.000","opcharges":"1100001100.000"},"component":"tpr-msa-sp-wsclientes0021"}}
+2026-08-27 10:13:38 [reactor-http-nio-5] INFO  c.p.s.i.i.a.r.f.WSClientes0021OperationRouter - {"timestamp":"2026-08-27 10:13:38.448 -0500","level":"INFO","data":{"header":null,"body":{"procesarDatosBienesCliente31Response":{"bodyOut":{"bienes":{"bienesInmuebles":{"bienesInmuebles":[{"accion":"","avaluo":"0.00","ciudad":"","identificador":"1","pais":"","provincia":"","tipo":""},{"accion":"","avaluo":"1100001100.00","ciudad":"","identificador":"2","pais":"","provincia":"","tipo":""},{"accion":"","avaluo":"1100001100.00","ciudad":"","identificador":"3","pais":"","provincia":"","tipo":""}]},"otrosBienes":{"otroBiens":[{"accion":"","avaluo":"0.00","descripcion":"082026","identificador":"1","informacionAdicional":""},{"accion":"","avaluo":"1100001100.00","descripcion":"","identificador":"2","informacionAdicional":""},{"accion":"","avaluo":"1100001100.00","descripcion":"","identificador":"3","informacionAdicional":""}]},"vehiculos":{"vehiculos":[{"accion":"","anio":"","avaluo":"0.00","identificador":"1","marcaModelio":""},{"accion":"","anio":"","avaluo":"1100001100.00","identificador":"2","marcaModelio":""},{"accion":"","anio":"","avaluo":"1100001100.00","identificador":"3","marcaModelio":""}]}}},"error":{"backend":"00638","codigo":"0","componente":"tpr-msa-sp-wsclientes0021","mensaje":"OK","mensajeNegocio":"","recurso":"tpr-msa-sp-wsclientes0021/ProcesarDatosBienesCliente31","tipo":"INFO"},"headerOut":{"agencia":"12","aplicacion":"00663","bancs":{"agencia":"0001","aplicacion":"","canal":"","estacion":"1","institucion":"0010","teller":"00070560","terminal":"1"},"canal":"03","dispositivo":"01010101010101010101010101010101010101010","documento":{"fechaContable":"","journals":{"journals":[{"valor":""}]},"numeroDocumento":""},"empresa":"0010","fechaHora":"201902281459012548","filler":"","geolocalizacion":"","guid":"3F2504E04F8911D39A0C0305E82C3302","idCliente":"","idioma":"es-EC","ip":"172.10.125.223","medio":"030001","sesion":"ASFGD1234DFG","tipoIdCliente":"","tipoTransaccion":"201007231","unicidad":"","usuario":"USINTERT"}}}},"clazz":"com.pichincha.sp.infrastructure.input.adapter.rest.factory.WSClientes0021OperationRouter","method":"log","message":"SOAP request end"}
+2026-08-27 10:13:38 [tracing-parallel-2] INFO  c.p.c.t.l.a.t.e.TracingEventHandler - {"type":"APPLICATION","data":{"date":"2026-08-27 10:13:38.445 -0500","args":{"request":{"informationActive":{"cif":"1491636","operation":"1","goods":{"bienesInmuebles":{"bienesInmueble":[{"type":"","country":"","province":"","city":"","appraisal":"","identifier":"","action":""}]},"vehicles":{"vehicle":[{"marcaModelio":"","year":"","appraisal":"","identifier":"","action":""}]},"otrosBienes":{"otherGood":[{"description":"DEPARTAMENTO","informationAdicional":"","appraisal":"10000001","identifier":"1","action":"B"}]}}},"teller":"00070560"}},"time":15,"clazz":"ProcessDataBienesCustomerService","method":"execute","response":{"code":"0","message":"OK","mensajeNegocio":"","type":"INFO","recurso":"tpr-msa-sp-wsclientes0021/ProcesarDatosBienesCliente31","componente":"tpr-msa-sp-wsclientes0021","backend":"00638","assets":{"bienesInmuebles":{"bienesInmueble":[{"type":"","country":"","province":"","city":"","appraisal":"0.00","identifier":"1","action":""},{"type":"","country":"","province":"","city":"","appraisal":"1100001100.00","identifier":"2","action":""},{"type":"","country":"","province":"","city":"","appraisal":"1100001100.00","identifier":"3","action":""}]},"vehicles":{"vehicle":[{"marcaModelio":"","year":"","appraisal":"0.00","identifier":"1","action":""},{"marcaModelio":"","year":"","appraisal":"1100001100.00","identifier":"2","action":""},{"marcaModelio":"","year":"","appraisal":"1100001100.00","identifier":"3","action":""}]},"otrosBienes":{"otherGood":[{"description":"082026","informationAdicional":"","appraisal":"0.00","identifier":"1","action":""},{"description":"","informationAdicional":"","appraisal":"1100001100.00","identifier":"2","action":""},{"description":"","informationAdicional":"","appraisal":"1100001100.00","identifier":"3","action":""}]}}},"component":"tpr-msa-sp-wsclientes0021"}}
+2026-08-27 10:13:38 [tracing-parallel-1] INFO  c.p.c.t.l.a.t.e.TracingEventHandler - {"type":"TRANSACTIONAL","data":{"id":"91cae64c-b55d-4805-9b64-db50f449dd89","app":null,"guid":null,"date":"2026-08-27 10:13:38.459 -0500","medium":null,"session":null,"channel":null,"requestId":null,"component":"tpr-msa-sp-wsclientes0021","requestUri":"http://localhost:8090/IntegrationBus/soap/WSClientes0021","requestBody":null,"protocolType":"HTTP","responseTime":45,"responseBody":null,"requestParams":{},"requestMethod":"POST","requestHeaders":{"Accept-Encoding":"gzip,deflate","Content-Type":"text/xml;charset=UTF-8","SOAPAction":"\"http://bpichincha.com/servicios/ProcesarDatosBienesCliente31\"","Content-Length":"2905","Host":"localhost:8090","Connection":"Keep-Alive","User-Agent":"Apache-HttpClient/4.5.5 (Java/17.0.12)"},"metadata":null}}
+2026-08-27 10:13:38 [reactor-http-nio-5] INFO  UnknownClass - {"timestamp":"2026-08-27 10:13:38.475 -0500","level":"INFO","data":"cancel","clazz":"UnknownClass","method":"UnknownMethod","message":"BANCS adapter flow finished"}
+2026-08-27 10:13:38 [reactor-http-nio-5] INFO  UnknownClass - {"timestamp":"2026-08-27 10:13:38.475 -0500","level":"INFO","data":"cancel","clazz":"UnknownClass","method":"UnknownMethod","message":"ProcessDataBienesCustomerService flow finished"}
+
 request
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://bpichincha.com/servicios">
    <soapenv:Header/>
@@ -74,7 +112,7 @@ request
    </soapenv:Body>
 </soapenv:Envelope>
 
-response
+response migrado
 <ns2:Envelope xmlns:ns2="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns3="http://bpichincha.com/servicios">
    <ns2:Body>
       <ns3:ProcesarDatosBienesCliente31Response>
@@ -124,7 +162,7 @@ response
                      <pais/>
                      <provincia/>
                      <ciudad/>
-                     <avaluo>0.000</avaluo>
+                     <avaluo>0.00</avaluo>
                      <identificador>1</identificador>
                      <accion/>
                   </bienesInmueble>
@@ -133,7 +171,7 @@ response
                      <pais/>
                      <provincia/>
                      <ciudad/>
-                     <avaluo>0.000</avaluo>
+                     <avaluo>1100001100.00</avaluo>
                      <identificador>2</identificador>
                      <accion/>
                   </bienesInmueble>
@@ -142,7 +180,7 @@ response
                      <pais/>
                      <provincia/>
                      <ciudad/>
-                     <avaluo>0.000</avaluo>
+                     <avaluo>1100001100.00</avaluo>
                      <identificador>3</identificador>
                      <accion/>
                   </bienesInmueble>
@@ -151,44 +189,44 @@ response
                   <vehiculo>
                      <marcaModelio/>
                      <anio/>
-                     <avaluo>0.000</avaluo>
+                     <avaluo>0.00</avaluo>
                      <identificador>1</identificador>
                      <accion/>
                   </vehiculo>
                   <vehiculo>
                      <marcaModelio/>
                      <anio/>
-                     <avaluo>0.000</avaluo>
+                     <avaluo>1100001100.00</avaluo>
                      <identificador>2</identificador>
                      <accion/>
                   </vehiculo>
                   <vehiculo>
                      <marcaModelio/>
                      <anio/>
-                     <avaluo>0.000</avaluo>
+                     <avaluo>1100001100.00</avaluo>
                      <identificador>3</identificador>
                      <accion/>
                   </vehiculo>
                </vehiculos>
                <otrosBienes>
                   <otroBien>
-                     <descripcion/>
+                     <descripcion>082026</descripcion>
                      <informacionAdicional/>
-                     <avaluo>0.000</avaluo>
+                     <avaluo>0.00</avaluo>
                      <identificador>1</identificador>
                      <accion/>
                   </otroBien>
                   <otroBien>
                      <descripcion/>
                      <informacionAdicional/>
-                     <avaluo>0.000</avaluo>
+                     <avaluo>1100001100.00</avaluo>
                      <identificador>2</identificador>
                      <accion/>
                   </otroBien>
                   <otroBien>
                      <descripcion/>
                      <informacionAdicional/>
-                     <avaluo>0.000</avaluo>
+                     <avaluo>1100001100.00</avaluo>
                      <identificador>3</identificador>
                      <accion/>
                   </otroBien>
@@ -208,6 +246,139 @@ response
    </ns2:Body>
 </ns2:Envelope>
 
+response legado
+<NS1:Envelope xmlns:NS1="http://schemas.xmlsoap.org/soap/envelope/">
+   <NS1:Body>
+      <NS2:ProcesarDatosBienesCliente31Response xmlns:NS2="http://bpichincha.com/servicios">
+         <headerOut>
+            <dispositivo>01010101010101010101010101010101010101010</dispositivo>
+            <empresa>0010</empresa>
+            <canal>03</canal>
+            <medio>030001</medio>
+            <aplicacion>00663</aplicacion>
+            <agencia>12</agencia>
+            <tipoTransaccion>201007231</tipoTransaccion>
+            <geolocalizacion/>
+            <usuario>USINTERT</usuario>
+            <unicidad/>
+            <guid>3F2504E04F8911D39A0C0305E82C3302</guid>
+            <fechaHora>201902281459012548</fechaHora>
+            <filler/>
+            <idioma>es-EC</idioma>
+            <sesion>ASFGD1234DFG</sesion>
+            <ip>172.10.125.223</ip>
+            <idCliente/>
+            <tipoIdCliente/>
+            <bancs>
+               <teller>00070560</teller>
+               <terminal>1</terminal>
+               <institucion>0010</institucion>
+               <agencia>0001</agencia>
+               <estacion>1</estacion>
+               <aplicacion/>
+               <canal/>
+            </bancs>
+            <documento>
+               <fechaContable/>
+               <numeroDocumento/>
+               <journals>
+                  <journal>
+                     <valor/>
+                  </journal>
+               </journals>
+            </documento>
+         </headerOut>
+         <bodyOut>
+            <bienes>
+               <bienesInmuebles>
+                  <bienesInmueble>
+                     <tipo>00</tipo>
+                     <pais/>
+                     <provincia/>
+                     <ciudad/>
+                     <avaluo>0.00</avaluo>
+                     <identificador>1</identificador>
+                     <accion/>
+                  </bienesInmueble>
+                  <bienesInmueble>
+                     <tipo>0+</tipo>
+                     <pais/>
+                     <provincia/>
+                     <ciudad/>
+                     <avaluo>1100001100.00</avaluo>
+                     <identificador>2</identificador>
+                     <accion/>
+                  </bienesInmueble>
+                  <bienesInmueble>
+                     <tipo>00</tipo>
+                     <pais/>
+                     <provincia/>
+                     <ciudad/>
+                     <avaluo>1100001100.00</avaluo>
+                     <identificador>3</identificador>
+                     <accion/>
+                  </bienesInmueble>
+               </bienesInmuebles>
+               <vehiculos>
+                  <vehiculo>
+                     <marcaModelio>00000+</marcaModelio>
+                     <anio/>
+                     <avaluo>0.00</avaluo>
+                     <identificador>1</identificador>
+                     <accion/>
+                  </vehiculo>
+                  <vehiculo>
+                     <marcaModelio/>
+                     <anio/>
+                     <avaluo>1100001100.00</avaluo>
+                     <identificador>2</identificador>
+                     <accion/>
+                  </vehiculo>
+                  <vehiculo>
+                     <marcaModelio/>
+                     <anio/>
+                     <avaluo>1100001100.00</avaluo>
+                     <identificador>3</identificador>
+                     <accion/>
+                  </vehiculo>
+               </vehiculos>
+               <otrosBienes>
+                  <otroBien>
+                     <descripcion/>
+                     <informacionAdicional/>
+                     <avaluo>0.00</avaluo>
+                     <identificador>1</identificador>
+                     <accion/>
+                  </otroBien>
+                  <otroBien>
+                     <descripcion/>
+                     <informacionAdicional/>
+                     <avaluo>1100001100.00</avaluo>
+                     <identificador>2</identificador>
+                     <accion/>
+                  </otroBien>
+                  <otroBien>
+                     <descripcion/>
+                     <informacionAdicional/>
+                     <avaluo>1100001100.00</avaluo>
+                     <identificador>3</identificador>
+                     <accion/>
+                  </otroBien>
+               </otrosBienes>
+            </bienes>
+         </bodyOut>
+         <error>
+            <codigo>0</codigo>
+            <mensaje>TCSBRKR1_BP-OK</mensaje>
+            <mensajeNegocio/>
+            <tipo>INFO</tipo>
+            <recurso>WSClientes0021/ProcesarDatosBienesCliente31</recurso>
+            <componente>WSClientes0021</componente>
+            <backend>00638</backend>
+         </error>
+      </NS2:ProcesarDatosBienesCliente31Response>
+   </NS1:Body>
+</NS1:Envelope>
 0002
 request
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://bpichincha.com/servicios">
