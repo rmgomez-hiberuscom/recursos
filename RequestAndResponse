@@ -1,5 +1,178 @@
 wsclientes0021
 
+https://tnd-msa-ad-bnc-customers-profile-enp.apps.ocptest.uiotest.bpichinchatest.test/bancs/trx/067050-20
+{
+    "transactionId": "067050",
+    "header": {
+        "bancsUser": {
+            "teller": "00070560",
+            "terminal": "1",
+            "institution": "003",
+            "branch": "1",
+            "workstation": "1",
+            "channel": "02"
+        }
+    },
+    "body": {
+        "accntNumber1": 1491636 ,
+        "defInteger1": 20,
+        "instance": ""
+    }
+}
+
+https://tnd-msa-ad-bnc-customers-profile-enp.apps.ocptest.uiotest.bpichinchatest.test/bancs/trx/067118
+{
+   "transactionId" : "067118",
+   "header" : {
+      "bancsUser" : {
+         "teller" : "00070560",
+         "terminal" : "1",
+         "institution" : "003",
+         "branch" : "1",
+         "workstation" : "1",
+         "channel" : "02"
+      }
+   },
+     "body":    {
+      "accntNumber1": 1491636,
+      "date1": "+10007-06-07T05:00:00.000+00:00",
+      "date2": "+10007-06-07T05:00:00.000+00:00",
+      "defaultString1": null,
+      "defaultString2": null,
+      "defaultString3": null,
+      "defaultString4": null,
+      "defaultString5": null,
+      "defaultString6": null,
+      "defaultString7": null,
+      "defaultString8": null,
+      "defaultString9": null,
+      "defaultString10": null,
+      "defaultString11": 0.00,
+      "date3": "+10007-06-07T05:00:00.000+00:00",
+      "defaultString12": 0.00,
+      "defaultString13": 0.00,
+      "defaultString14": null,
+      "defaultString15": 0.00,
+      "defaultString16": 0.00,
+      "defaultString17": 0.00,
+      "defaultString18": 0.00,
+      "defaultString19": 0.00,
+      "defaultString20": null,
+      "typeasst1": null,
+      "typeasst2": null,
+      "typeasst3": null,
+      "cntasst1": null,
+      "cntasst2": null,
+      "cntasst3": null,
+      "prvasst1": null,
+      "prvasst2": null,
+      "prvasst3": null,
+      "cityasst1": null,
+      "cityasst2": null,
+      "cityasst3": null,
+      "valuation1": 0.00,
+      "valuation2": 0.00,
+      "valuation3": 0.00,
+      "brand1": null,
+      "brand2": "AUDI",
+      "brand3": null,
+      "model1": null,
+      "model2": "2025",
+      "model3": null,
+      "vehval1": 0.00,
+      "vehval2": 70000.00,
+      "vehval3": 0.00,
+      "defaultString29": null,
+      "defaultString30": "00070560",
+      "date4": "2026-08-28T05:00:00.000+00:00",
+      "othbrand1": null,
+      "othbrand2": null,
+      "othbrand3": "DEPARTAMENTO",
+      "othmodel1": null,
+      "othmodel2": null,
+      "othmodel3": "dos planta",
+      "othval1": 0.00,
+      "othval2": 0.00,
+      "othval3": 500.00,
+      "detothexp": null,
+      "salescost": 0.00,
+      "opcharges": 0.00
+   }
+}
+
+{
+   "transactionId": "067118",
+   "success": true,
+   "body":    {
+      "accntNumber1": 1491636,
+      "date1": "+10007-06-07T05:00:00.000+00:00",
+      "date2": "+10007-06-07T05:00:00.000+00:00",
+      "defaultString1": null,
+      "defaultString2": null,
+      "defaultString3": null,
+      "defaultString4": null,
+      "defaultString5": null,
+      "defaultString6": null,
+      "defaultString7": null,
+      "defaultString8": null,
+      "defaultString9": null,
+      "defaultString10": null,
+      "defaultString11": 0,
+      "date3": "+10007-06-07T05:00:00.000+00:00",
+      "defaultString12": 0,
+      "defaultString13": 0,
+      "defaultString14": null,
+      "defaultString15": 0,
+      "defaultString16": 0,
+      "defaultString17": 0,
+      "defaultString18": 0,
+      "defaultString19": 0,
+      "defaultString20": null,
+      "typeasst1": null,
+      "typeasst2": null,
+      "typeasst3": null,
+      "cntasst1": null,
+      "cntasst2": null,
+      "cntasst3": null,
+      "prvasst1": null,
+      "prvasst2": null,
+      "prvasst3": null,
+      "cityasst1": null,
+      "cityasst2": null,
+      "cityasst3": null,
+      "valuation1": 0,
+      "valuation2": 0,
+      "valuation3": 0,
+      "brand1": null,
+      "brand2": "AUDI",
+      "brand3": null,
+      "model1": null,
+      "model2": "2025",
+      "model3": null,
+      "vehval1": 0,
+      "vehval2": 70000,
+      "vehval3": 0,
+      "defaultString29": null,
+      "defaultString30": "00070560",
+      "date4": "2026-08-28T05:00:00.000+00:00",
+      "othbrand1": null,
+      "othbrand2": null,
+      "othbrand3": "DEPARTAMENTO",
+      "othmodel1": null,
+      "othmodel2": null,
+      "othmodel3": "dos planta",
+      "othval1": 0,
+      "othval2": 0,
+      "othval3": 500,
+      "detothexp": null,
+      "salescost": 0,
+      "opcharges": 0
+   },
+   "error": null
+}
+
+
+
 sanitiza tambien marcaModelio, defaultString14, typeasst(n), brand1, detothexp si tiene un + le eliminas todo a la izquierda o tambien si tiene varios + como:
  "defaultString14": "00000+00000+"
 "typeasst2": "0+"
