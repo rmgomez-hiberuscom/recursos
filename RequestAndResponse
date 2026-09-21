@@ -1,3 +1,275 @@
+wsproductos0024
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://bpichincha.com/servicios">
+   <soapenv:Header/>
+   <soapenv:Body>
+	  <ser:ConsultarDescripcionTodosProductos01>
+		 <headerIn>
+			<dispositivo>IOS-5715AA94-B1A4-45C6-9088-D53330DDC932</dispositivo>
+			<empresa>0010</empresa>
+			<canal>03</canal>
+			<medio>030006</medio>
+			<aplicacion>00663</aplicacion>
+			<agencia></agencia>
+			<tipoTransaccion>202002401</tipoTransaccion>
+			<geolocalizacion>1234</geolocalizacion>
+			<usuario>USINTERT</usuario>
+			<unicidad>e7eaa2eb-b703-4cd5-89be-ada1b91d6dbb</unicidad>
+			<guid>e7eaa2eb-b703-4cd5-89be-ada1b91d6dbb</guid>
+			<fechaHora>202604160955000624</fechaHora>
+			<filler></filler>
+			<idioma>es-EC</idioma>
+			<sesion></sesion>
+			<ip>10.151.152.108</ip>
+			<idCliente></idCliente>
+			<tipoIdCliente></tipoIdCliente>
+			<documento>
+			   <fechaContable></fechaContable>
+			   <numeroDocumento></numeroDocumento>
+			   <journals></journals>
+			</documento>
+		 </headerIn>         
+		 <bodyIn>
+			<ordenante>
+			   <cif>0000000000010572</cif>
+			</ordenante>
+		 </bodyIn>
+	  </ser:ConsultarDescripcionTodosProductos01>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+response legado
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <ns2:ConsultarDescripcionTodosProductos01Response xmlns:ns2="http://bpichincha.com/servicios">
+         <headerOut>
+            <dispositivo>IOS-5715AA94-B1A4-45C6-9088-D53330DDC932</dispositivo>
+            <empresa>0010</empresa>
+            <canal>03</canal>
+            <medio>030006</medio>
+            <aplicacion>00663</aplicacion>
+            <agencia/>
+            <tipoTransaccion>202002401</tipoTransaccion>
+            <geolocalizacion>1234</geolocalizacion>
+            <usuario>USINTERT</usuario>
+            <unicidad>e7eaa2eb-b703-4cd5-89be-ada1b91d6dbb</unicidad>
+            <guid>e7eaa2eb-b703-4cd5-89be-ada1b91d6dbb</guid>
+            <fechaHora>202604160955000624</fechaHora>
+            <filler/>
+            <idioma>es-EC</idioma>
+            <sesion/>
+            <ip>10.151.152.108</ip>
+            <idCliente/>
+            <tipoIdCliente/>
+            <documento>
+               <fechaContable/>
+               <numeroDocumento/>
+               <journals/>
+            </documento>
+         </headerOut>
+         <bodyOut>
+            <productos>
+               <producto>
+                  <cif>0000000000010572</cif>
+                  <numero>2100036305</numero>
+                  <principal>false</principal>
+                  <alias>CTA306</alias>
+                  <tipo>CTE</tipo>
+                  <idProducto>107363</idProducto>
+                  <descripcion>CTA.CTE PERSONAL</descripcion>
+                  <subtipo>21010001</subtipo>
+               </producto>
+               <producto>
+                  <cif>0000000000010572</cif>
+                  <numero>2100210298</numero>
+                  <principal>false</principal>
+                  <alias>CTA298</alias>
+                  <tipo>CTE</tipo>
+                  <idProducto>107421</idProducto>
+                  <descripcion>CTA.CTE PERSONAL</descripcion>
+                  <subtipo>21010001</subtipo>
+               </producto>
+               <producto>
+                  <cif>0000000000010572</cif>
+                  <numero>2204049477</numero>
+                  <principal>false</principal>
+                  <alias>AHO477</alias>
+                  <tipo>AHO</tipo>
+                  <idProducto>107433</idProducto>
+                  <descripcion>AHORRO TRADICIONAL</descripcion>
+                  <subtipo>22310001</subtipo>
+               </producto>
+               <producto>
+                  <cif>0000000000010572</cif>
+                  <numero>2100212465</numero>
+                  <principal>false</principal>
+                  <alias>CTA465</alias>
+                  <tipo>CTE</tipo>
+                  <idProducto>107561</idProducto>
+                  <descripcion>CTA.CTE PERSONAL</descripcion>
+                  <subtipo>21010001</subtipo>
+               </producto>
+               <producto>
+                  <cif>0000000000010572</cif>
+                  <numero>2100214467</numero>
+                  <principal>false</principal>
+                  <alias>CTA467</alias>
+                  <tipo>CTE</tipo>
+                  <idProducto>107562</idProducto>
+                  <descripcion>CTA.CTE PERSONAL</descripcion>
+                  <subtipo>21010001</subtipo>
+               </producto>
+               <producto>
+                  <cif>0000000000010572</cif>
+                  <numero>2204118269</numero>
+                  <principal>false</principal>
+                  <alias>AHOFLEXIBL</alias>
+                  <tipo>AHO</tipo>
+                  <idProducto>121965</idProducto>
+                  <descripcion>PLAN AHORRO FUTURO SIMPLE 2</descripcion>
+                  <subtipo>22153047</subtipo>
+               </producto>
+            </productos>
+         </bodyOut>
+         <error>
+            <codigo>0</codigo>
+            <mensaje>TSECBPOC13-OK</mensaje>
+            <mensajeNegocio/>
+            <tipo>INFO</tipo>
+            <recurso>WSProductos0024/ConsultarDescripcionTodosProductos01</recurso>
+            <componente>ConsultarDescripcionTodosProductos01</componente>
+            <backend>00633</backend>
+         </error>
+      </ns2:ConsultarDescripcionTodosProductos01Response>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+response migrado
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Body>
+      <ns3:ConsultarDescripcionTodosProductos01Response xmlns:ns3="http://bpichincha.com/servicios">
+         <headerOut>
+            <dispositivo>IOS-5715AA94-B1A4-45C6-9088-D53330DDC932</dispositivo>
+            <empresa>0010</empresa>
+            <canal>03</canal>
+            <medio>030006</medio>
+            <aplicacion>00663</aplicacion>
+            <agencia/>
+            <tipoTransaccion>202002401</tipoTransaccion>
+            <geolocalizacion>1234</geolocalizacion>
+            <usuario>USINTERT</usuario>
+            <unicidad>e7eaa2eb-b703-4cd5-89be-ada1b91d6dbb</unicidad>
+            <guid>e7eaa2eb-b703-4cd5-89be-ada1b91d6dbb</guid>
+            <fechaHora>202604160955000624</fechaHora>
+            <filler/>
+            <idioma>es-EC</idioma>
+            <sesion/>
+            <ip>10.151.152.108</ip>
+            <idCliente/>
+            <tipoIdCliente/>
+            <documento>
+               <fechaContable/>
+               <numeroDocumento/>
+               <journals/>
+            </documento>
+         </headerOut>
+         <bodyOut>
+            <productos>
+               <producto>
+                  <cif>0000000000010572</cif>
+                  <numero>2100036305</numero>
+                  <principal>false</principal>
+                  <alias>CTA306</alias>
+                  <tipo>CTE</tipo>
+                  <idProducto>107363</idProducto>
+                  <descripcion>CTA.CTE PERSONAL</descripcion>
+                  <subtipo>21010001</subtipo>
+               </producto>
+               <producto>
+                  <cif>0000000000010572</cif>
+                  <numero>2100210298</numero>
+                  <principal>false</principal>
+                  <alias>CTA298</alias>
+                  <tipo>CTE</tipo>
+                  <idProducto>107421</idProducto>
+                  <descripcion>CTA.CTE PERSONAL</descripcion>
+                  <subtipo>21010001</subtipo>
+               </producto>
+               <producto>
+                  <cif>0000000000010572</cif>
+                  <numero>2204049477</numero>
+                  <principal>false</principal>
+                  <alias>AHO477</alias>
+                  <tipo>AHO</tipo>
+                  <idProducto>107433</idProducto>
+                  <descripcion>AHORRO TRADICIONAL</descripcion>
+                  <subtipo>22310001</subtipo>
+               </producto>
+               <producto>
+                  <cif>0000000000010572</cif>
+                  <numero>2100212465</numero>
+                  <principal>false</principal>
+                  <alias>CTA465</alias>
+                  <tipo>CTE</tipo>
+                  <idProducto>107561</idProducto>
+                  <descripcion>CTA.CTE PERSONAL</descripcion>
+                  <subtipo>21010001</subtipo>
+               </producto>
+               <producto>
+                  <cif>0000000000010572</cif>
+                  <numero>2100214467</numero>
+                  <principal>false</principal>
+                  <alias>CTA467</alias>
+                  <tipo>CTE</tipo>
+                  <idProducto>107562</idProducto>
+                  <descripcion>CTA.CTE PERSONAL</descripcion>
+                  <subtipo>21010001</subtipo>
+               </producto>
+               <producto>
+                  <cif>0000000000010572</cif>
+                  <numero>2204118269</numero>
+                  <principal>false</principal>
+                  <alias>AHOFLEXIBL</alias>
+                  <tipo>AHO</tipo>
+                  <idProducto>121965</idProducto>
+                  <descripcion>PLAN AHORRO FUTURO SIMPLE 2</descripcion>
+                  <subtipo>22153047</subtipo>
+               </producto>
+               <producto>
+                  <cif>0000000000010572</cif>
+                  <numero>2204148747</numero>
+                  <principal>false</principal>
+                  <alias>CUE747</alias>
+                  <tipo>AHO</tipo>
+                  <idProducto>217834</idProducto>
+                  <descripcion>AHORRO ELECTRONICO</descripcion>
+                  <subtipo>22320003</subtipo>
+               </producto>
+               <producto>
+                  <cif>0000000000010572</cif>
+                  <numero>2204060957</numero>
+                  <principal>false</principal>
+                  <alias>TRA957</alias>
+                  <tipo>AHO</tipo>
+                  <idProducto>217841</idProducto>
+                  <descripcion>AHORRO TRADICIONAL</descripcion>
+                  <subtipo>22310001</subtipo>
+               </producto>
+            </productos>
+         </bodyOut>
+         <error>
+            <codigo>0</codigo>
+            <mensaje>OK</mensaje>
+            <mensajeNegocio/>
+            <tipo>INFO</tipo>
+            <recurso>tpr-msa-sp-wsproductos0024/ConsultarDescripcionTodosProductos01</recurso>
+            <componente>ConsultarDescripcionTodosProductos01</componente>
+            <backend>00633</backend>
+         </error>
+      </ns3:ConsultarDescripcionTodosProductos01Response>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
 wsclientes0021
 
 https://tnd-msa-ad-bnc-customers-profile-enp.apps.ocptest.uiotest.bpichinchatest.test/bancs/trx/067050-20
