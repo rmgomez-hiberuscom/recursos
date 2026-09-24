@@ -1,0 +1,452 @@
+{
+  "info": {
+    "_postman_id": "f7ee7fa4-e8eb-478f-9a20-796d80f9a275",
+    "name": "WSAdministracion0011",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51547842",
+    "_collection_link": "https://go.postman.co/collection/51547842-f7ee7fa4-e8eb-478f-9a20-796d80f9a275?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Datos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "https://dev.azure.com/BancoPichinchaEC/adi-especificaciones-tecnicas/_git/adi-doc-tecspec-tribu-integracion-apis?path=/sp%20-%20Soporte/tca-msa-sp-wsadministracion0011\r\nhttps://dev.azure.com/BancoPichinchaEC/tpl-integration-services-was/_git/ws-wsadministracion0011-was\r\nhttps://dev.azure.com/BancoPichinchaEC/tpl-integration-services-was/_git/ms-msadministracion0032-was\r\nhttps://dev.azure.com/BancoPichinchaEC/tpl-integration-services-was/_git/ms-msadministracion0033-was\r\nhttps://dev.azure.com/BancoPichinchaEC/tpl-integration-services-was/_git/ms-msadministracion0031-was\r\nhttps://pichincha.atlassian.net/browse/BTHCCC-9240\r\n\r\n\r\n\r\n\r\n<jta-data-source>jndi.administracion</jta-data-source>\r\n\r\njndiName \tjndi.administracion \tdatabaseName \t \tserverName \t \tportNumber \t1521 \tproviderType \t\"Oracle JDBC Driver (XA)\" \tURL \t\"jdbc:oracle:thin:@omni-tst-scan.uio.bpichincha.com:10521/TPOMN\" \tconnectionTimeout \t180 \tmaxConnections \t10 \tminConnections \t0 \treapTime \t180 \tunusedTimeout \t1800 \tauthDataAlias \t\"TSECBPOC13CellManager01/USR_ADMINISTRACION\" \r\n\r\n\r\n\r\n\r\nPOMN\r\n\r\njndi.administracion\r\n\r\nOPS$USRTADOM\r\n\r\nTest\r\n\r\nCCC-ORACLEXA-ADMINISTRACION-TPOMN-USER\r\n\r\nOPS$USRTADOM\r\n\r\nCCC-ORACLEXA-ADMINISTRACION-TPOMN-PASS\r\n\r\ngH5*c8h/JM=3\r\n\r\n\r\n\r\ndef identificacion = context.testCase.getPropertyValue(\"identificacion\")\r\n\r\ndef nuevoValor = identificacion.toLong() + 1\r\n\r\ncontext.testCase.setPropertyValue(\r\n    \"identificacion\",\r\n    nuevoValor.toString()\r\n)\r\n\r\nlog.info(\"Nueva identificación: \" + nuevoValor)\r\n\r\n\r\n${#TestCase#identificacion}\r\n ",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "consultarRubros01 Legacy",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "text/xml; charset=utf-8"
+          },
+          {
+            "key": "SOAPAction",
+            "value": "http://bpichincha.com/servicios/ActualizarMontoTransferenciaCuenta31"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ser=\"http://bpichincha.com/servicios\">\n  <soapenv:Header/>\n  <soapenv:Body>\n    <ser:consultarRubros01>\n      <headerIn>\n        <dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>\n        <empresa>0010</empresa>\n        <canal>02</canal>\n        <medio>020002</medio>\n        <aplicacion>00647</aplicacion>\n        <agencia>197</agencia>\n        <tipoTransaccion>302000201</tipoTransaccion>\n        <geolocalizacion>1234</geolocalizacion>\n        <usuario>ISMAVEGA</usuario>\n        <unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>\n        <guid>59cae047abad47d5b683388a132fbddf</guid>\n        <fechaHora>202506251508450015</fechaHora>\n        <filler/>\n        <idioma>es-EC</idioma>\n        <sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>\n        <ip>0.0.0.0</ip>\n        <idCliente>0801545674</idCliente>\n        <tipoIdCliente>0001</tipoIdCliente>\n        <bancs>\n          <teller>00070560</teller>\n          <terminal>1</terminal>\n          <institucion>0010</institucion>\n          <agencia>1</agencia>\n          <estacion>1</estacion>\n          <aplicacion/>\n          <canal/>\n        </bancs>\n      </headerIn>\n      <bodyIn>\n        <codigoAutorizaMedioServi>6389</codigoAutorizaMedioServi>\n        <valorRubro>INTERNET OTROS</valorRubro>\n        <nombreRubro>226</nombreRubro>\n        <ingresadoPorRubro>MIGRACION</ingresadoPorRubro>\n        <descripcionRubro></descripcionRubro>\n        <fechaIngresoRubro></fechaIngresoRubro>\n      </bodyIn>\n    </ser:consultarRubros01>\n  </soapenv:Body>\n</soapenv:Envelope>",
+          "options": {
+            "raw": {
+              "language": "xml"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://10.60.128.58:6981/WSAdministracion0011/soap/WSAdministracion0011Request",
+          "protocol": "http",
+          "host": [
+            "10",
+            "60",
+            "128",
+            "58"
+          ],
+          "port": "6981",
+          "path": [
+            "WSAdministracion0011",
+            "soap",
+            "WSAdministracion0011Request"
+          ]
+        },
+        "description": "Método ActualizarMontoTransferenciaCuenta31 que permite Actualizar el Monto de Transferencia de la cuenta de un cliente."
+      },
+      "response": []
+    },
+    {
+      "name": "consultarRubros01 Local",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "text/xml; charset=utf-8"
+          },
+          {
+            "key": "SOAPAction",
+            "value": "http://bpichincha.com/servicios/ActualizarMontoTransferenciaCuenta31"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ser=\"http://bpichincha.com/servicios\">\n  <soapenv:Header/>\n  <soapenv:Body>\n    <ser:consultarRubros01>\n      <headerIn>\n        <dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>\n        <empresa>0010</empresa>\n        <canal>02</canal>\n        <medio>020002</medio>\n        <aplicacion>00647</aplicacion>\n        <agencia>197</agencia>\n        <tipoTransaccion>302000201</tipoTransaccion>\n        <geolocalizacion>1234</geolocalizacion>\n        <usuario>ISMAVEGA</usuario>\n        <unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>\n        <guid>59cae047abad47d5b683388a132fbddf</guid>\n        <fechaHora>202506251508450015</fechaHora>\n        <filler/>\n        <idioma>es-EC</idioma>\n        <sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>\n        <ip>0.0.0.0</ip>\n        <idCliente>0801545674</idCliente>\n        <tipoIdCliente>0001</tipoIdCliente>\n        <bancs>\n          <teller>00070560</teller>\n          <terminal>1</terminal>\n          <institucion>0010</institucion>\n          <agencia>1</agencia>\n          <estacion>1</estacion>\n          <aplicacion/>\n          <canal/>\n        </bancs>\n      </headerIn>\n      <bodyIn>\n        <codigoAutorizaMedioServi>6389</codigoAutorizaMedioServi>\n        <valorRubro>INTERNET OTROS</valorRubro>\n        <nombreRubro>226</nombreRubro>\n        <ingresadoPorRubro>MIGRACION</ingresadoPorRubro>\n        <descripcionRubro></descripcionRubro>\n        <fechaIngresoRubro></fechaIngresoRubro>\n      </bodyIn>\n    </ser:consultarRubros01>\n  </soapenv:Body>\n</soapenv:Envelope>",
+          "options": {
+            "raw": {
+              "language": "xml"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8090/WSAdministracion0011/soap/WSAdministracion0011Request",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "WSAdministracion0011",
+            "soap",
+            "WSAdministracion0011Request"
+          ]
+        },
+        "description": "Método ActualizarMontoTransferenciaCuenta31 que permite Actualizar el Monto de Transferencia de la cuenta de un cliente."
+      },
+      "response": []
+    },
+    {
+      "name": "guardarRubros22 Legacy",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "text/xml; charset=utf-8"
+          },
+          {
+            "key": "SOAPAction",
+            "value": "http://bpichincha.com/servicios/ActualizarMontoTransferenciaCuenta31"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ser=\"http://bpichincha.com/servicios\">\n    <soapenv:Header/>\n    <soapenv:Body>\n        <ser:guardarRubros22>\n            <headerIn>\n                <dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>\n                <empresa>0010</empresa>\n                <canal>02</canal>\n                <medio>020002</medio>\n                <aplicacion>00647</aplicacion>\n                <agencia>197</agencia>\n                <tipoTransaccion>302000201</tipoTransaccion>\n                <geolocalizacion>1234</geolocalizacion>\n                <usuario>ISMAVEGA</usuario>\n                <unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>\n                <guid>59cae047abad47d5b683388a132fbddf</guid>\n                <fechaHora>202506251508450015</fechaHora>\n                <filler/>\n                <idioma>es-EC</idioma>\n                <sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>\n                <ip>0.0.0.0</ip>\n                <idCliente>0801545674</idCliente>\n                <tipoIdCliente>0001</tipoIdCliente>\n                <bancs>\n                    <teller>00070560</teller>\n                    <terminal>1</terminal>\n                    <institucion>0010</institucion>\n                    <agencia>1</agencia>\n                    <estacion>1</estacion>\n                    <aplicacion/>\n                    <canal/>\n                </bancs>\n            </headerIn>\n            <bodyIn>\n                <codigoAutorizaMedioServi>8898</codigoAutorizaMedioServi>\n                <nombreRubro>888</nombreRubro>\n                <descripcionRubro>testSeptiembre2026</descripcionRubro>\n                <valorRubro>VALOR RUBRO TEST SEPT 2026</valorRubro>\n                <ingresadoPorRubro>MIRGACION</ingresadoPorRubro>\n            </bodyIn>\n        </ser:guardarRubros22>\n    </soapenv:Body>\n</soapenv:Envelope>",
+          "options": {
+            "raw": {
+              "language": "xml"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://10.60.128.58:6981/WSAdministracion0011/soap/WSAdministracion0011Request",
+          "protocol": "http",
+          "host": [
+            "10",
+            "60",
+            "128",
+            "58"
+          ],
+          "port": "6981",
+          "path": [
+            "WSAdministracion0011",
+            "soap",
+            "WSAdministracion0011Request"
+          ]
+        },
+        "description": "Método ActualizarMontoTransferenciaCuenta31 que permite Actualizar el Monto de Transferencia de la cuenta de un cliente."
+      },
+      "response": [
+        {
+          "name": "guardarRubros22 Legacy",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "text/xml; charset=utf-8"
+              },
+              {
+                "key": "SOAPAction",
+                "value": "http://bpichincha.com/servicios/ActualizarMontoTransferenciaCuenta31"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ser=\"http://bpichincha.com/servicios\">\n    <soapenv:Header/>\n    <soapenv:Body>\n        <ser:guardarRubros22>\n            <headerIn>\n                <dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>\n                <empresa>0010</empresa>\n                <canal>02</canal>\n                <medio>020002</medio>\n                <aplicacion>00647</aplicacion>\n                <agencia>197</agencia>\n                <tipoTransaccion>302000201</tipoTransaccion>\n                <geolocalizacion>1234</geolocalizacion>\n                <usuario>ISMAVEGA</usuario>\n                <unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>\n                <guid>59cae047abad47d5b683388a132fbddf</guid>\n                <fechaHora>202506251508450015</fechaHora>\n                <filler/>\n                <idioma>es-EC</idioma>\n                <sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>\n                <ip>0.0.0.0</ip>\n                <idCliente>0801545674</idCliente>\n                <tipoIdCliente>0001</tipoIdCliente>\n                <bancs>\n                    <teller>00070560</teller>\n                    <terminal>1</terminal>\n                    <institucion>0010</institucion>\n                    <agencia>1</agencia>\n                    <estacion>1</estacion>\n                    <aplicacion/>\n                    <canal/>\n                </bancs>\n            </headerIn>\n            <bodyIn>\n                <codigoAutorizaMedioServi>8898</codigoAutorizaMedioServi>\n                <nombreRubro>888</nombreRubro>\n                <descripcionRubro>testSeptiembre2026</descripcionRubro>\n                <valorRubro>VALOR RUBRO TEST SEPT 2026</valorRubro>\n                <ingresadoPorRubro>MIRGACION</ingresadoPorRubro>\n            </bodyIn>\n        </ser:guardarRubros22>\n    </soapenv:Body>\n</soapenv:Envelope>",
+              "options": {
+                "raw": {
+                  "language": "xml"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://10.60.128.58:6981/WSAdministracion0011/soap/WSAdministracion0011Request",
+              "protocol": "http",
+              "host": [
+                "10",
+                "60",
+                "128",
+                "58"
+              ],
+              "port": "6981",
+              "path": [
+                "WSAdministracion0011",
+                "soap",
+                "WSAdministracion0011Request"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "xml",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Servlet/3.0"
+            },
+            {
+              "key": "content-type",
+              "value": "text/xml; charset=utf-8"
+            },
+            {
+              "key": "content-language",
+              "value": "en-US"
+            },
+            {
+              "key": "content-length",
+              "value": "1161"
+            },
+            {
+              "key": "date",
+              "value": "Thu, 10 Sep 2026 21:50:54 GMT"
+            }
+          ],
+          "cookie": [],
+          "body": "<?xml version=\"1.0\" encoding=\"utf-8\"?><soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"><soapenv:Body><ns2:guardarRubros22Response xmlns:ns2=\"http://bpichincha.com/servicios\"><headerOut><dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo><empresa>0010</empresa><canal>02</canal><medio>020002</medio><aplicacion>00647</aplicacion><agencia>197</agencia><tipoTransaccion>302000201</tipoTransaccion><geolocalizacion>1234</geolocalizacion><usuario>ISMAVEGA</usuario><unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad><guid>59cae047abad47d5b683388a132fbddf</guid><fechaHora>202506251508450015</fechaHora><filler></filler><idioma>es-EC</idioma><sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion><ip>0.0.0.0</ip><idCliente>0801545674</idCliente><tipoIdCliente>0001</tipoIdCliente></headerOut><bodyOut><rubros/></bodyOut><error><codigo>0</codigo><mensaje>VHReglas-OK</mensaje><mensajeNegocio></mensajeNegocio><tipo>INFO</tipo><recurso>WSAdministracion0011/guardarRubros22</recurso><componente>WSAdministracion0011</componente><backend>00641</backend></error></ns2:guardarRubros22Response></soapenv:Body></soapenv:Envelope>"
+        }
+      ]
+    },
+    {
+      "name": "guardarRubros22 Local",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "text/xml; charset=utf-8"
+          },
+          {
+            "key": "SOAPAction",
+            "value": "http://bpichincha.com/servicios/ActualizarMontoTransferenciaCuenta31"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ser=\"http://bpichincha.com/servicios\">\n    <soapenv:Header/>\n    <soapenv:Body>\n        <ser:guardarRubros22>\n            <headerIn>\n                <dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>\n                <empresa>0010</empresa>\n                <canal>02</canal>\n                <medio>020002</medio>\n                <aplicacion>00647</aplicacion>\n                <agencia>197</agencia>\n                <tipoTransaccion>302000201</tipoTransaccion>\n                <geolocalizacion>1234</geolocalizacion>\n                <usuario>ISMAVEGA</usuario>\n                <unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>\n                <guid>59cae047abad47d5b683388a132fbddf</guid>\n                <fechaHora>202506251508450015</fechaHora>\n                <filler/>\n                <idioma>es-EC</idioma>\n                <sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>\n                <ip>0.0.0.0</ip>\n                <idCliente>0801545674</idCliente>\n                <tipoIdCliente>0001</tipoIdCliente>\n                <bancs>\n                    <teller>00070560</teller>\n                    <terminal>1</terminal>\n                    <institucion>0010</institucion>\n                    <agencia>1</agencia>\n                    <estacion>1</estacion>\n                    <aplicacion/>\n                    <canal/>\n                </bancs>\n            </headerIn>\n            <bodyIn>\n                <codigoAutorizaMedioServi>8898</codigoAutorizaMedioServi>\n                <nombreRubro>888</nombreRubro>\n                <descripcionRubro>testSeptiembre2026123</descripcionRubro>\n                <valorRubro>VALOR RUBRO TEST SEPT 202123</valorRubro>\n                <ingresadoPorRubro>MIRGACION</ingresadoPorRubro>\n            </bodyIn>\n        </ser:guardarRubros22>\n    </soapenv:Body>\n</soapenv:Envelope>",
+          "options": {
+            "raw": {
+              "language": "xml"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8090/WSAdministracion0011/soap/WSAdministracion0011Request",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "WSAdministracion0011",
+            "soap",
+            "WSAdministracion0011Request"
+          ]
+        },
+        "description": "Método ActualizarMontoTransferenciaCuenta31 que permite Actualizar el Monto de Transferencia de la cuenta de un cliente."
+      },
+      "response": []
+    },
+    {
+      "name": "actualizarRubros34 Legacy",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "text/xml; charset=utf-8"
+          },
+          {
+            "key": "SOAPAction",
+            "value": "http://bpichincha.com/servicios/ActualizarMontoTransferenciaCuenta31"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ser=\"http://bpichincha.com/servicios\">\n  <soapenv:Header/>\n  <soapenv:Body>\n    <ser:actualizarRubros34>\n      <headerIn>\n        <dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>\n        <empresa>0010</empresa>\n        <canal>02</canal>\n        <medio>020002</medio>\n        <aplicacion>00647</aplicacion>\n        <agencia>197</agencia>\n        <tipoTransaccion>302000201</tipoTransaccion>\n        <geolocalizacion>1234</geolocalizacion>\n        <usuario>ISMAVEGA</usuario>\n        <unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>\n        <guid>59cae047abad47d5b683388a132fbddf</guid>\n        <fechaHora>202506251508450015</fechaHora>\n        <filler/>\n        <idioma>es-EC</idioma>\n        <sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>\n        <ip>0.0.0.0</ip>\n        <idCliente>0801545674</idCliente>\n        <tipoIdCliente>0001</tipoIdCliente>\n        <bancs>\n          <teller>00070560</teller>\n          <terminal>1</terminal>\n          <institucion>0010</institucion>\n          <agencia>1</agencia>\n          <estacion>1</estacion>\n          <aplicacion/>\n          <canal/>\n        </bancs>\n      </headerIn>\n      <bodyIn>\n        <codigoAutorizaMedioServi>8898</codigoAutorizaMedioServi>\n        <nombreRubro>888</nombreRubro>\n        <descripcionRubro>testSeptiembre2026ACTUALIZADO</descripcionRubro>\n        <valorRubro>VALOR RUBRO TEST SEPT 2026 ACTUALIZADO</valorRubro>\n      </bodyIn>\n    </ser:actualizarRubros34>\n  </soapenv:Body>\n</soapenv:Envelope>",
+          "options": {
+            "raw": {
+              "language": "xml"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://10.60.128.58:6981/WSAdministracion0011/soap/WSAdministracion0011Request",
+          "protocol": "http",
+          "host": [
+            "10",
+            "60",
+            "128",
+            "58"
+          ],
+          "port": "6981",
+          "path": [
+            "WSAdministracion0011",
+            "soap",
+            "WSAdministracion0011Request"
+          ]
+        },
+        "description": "Método ActualizarMontoTransferenciaCuenta31 que permite Actualizar el Monto de Transferencia de la cuenta de un cliente."
+      },
+      "response": []
+    },
+    {
+      "name": "actualizarRubros34 Local",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "text/xml; charset=utf-8"
+          },
+          {
+            "key": "SOAPAction",
+            "value": "http://bpichincha.com/servicios/ActualizarMontoTransferenciaCuenta31"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ser=\"http://bpichincha.com/servicios\">\n  <soapenv:Header/>\n  <soapenv:Body>\n    <ser:actualizarRubros34>\n      <headerIn>\n        <dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>\n        <empresa>0010</empresa>\n        <canal>02</canal>\n        <medio>020002</medio>\n        <aplicacion>00647</aplicacion>\n        <agencia>197</agencia>\n        <tipoTransaccion>302000201</tipoTransaccion>\n        <geolocalizacion>1234</geolocalizacion>\n        <usuario>ISMAVEGA</usuario>\n        <unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>\n        <guid>59cae047abad47d5b683388a132fbddf</guid>\n        <fechaHora>202506251508450015</fechaHora>\n        <filler/>\n        <idioma>es-EC</idioma>\n        <sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>\n        <ip>0.0.0.0</ip>\n        <idCliente>0801545674</idCliente>\n        <tipoIdCliente>0001</tipoIdCliente>\n        <bancs>\n          <teller>00070560</teller>\n          <terminal>1</terminal>\n          <institucion>0010</institucion>\n          <agencia>1</agencia>\n          <estacion>1</estacion>\n          <aplicacion/>\n          <canal/>\n        </bancs>\n      </headerIn>\n      <bodyIn>\n        <codigoAutorizaMedioServi>888</codigoAutorizaMedioServi>\n        <nombreRubro>8888</nombreRubro>\n        <descripcionRubro>testSeptiembre2026ACTUALIZADO</descripcionRubro>\n        <valorRubro>VALOR RUBRO TEST SEPT 2026 ACTUALIZADO</valorRubro>\n      </bodyIn>\n    </ser:actualizarRubros34>\n  </soapenv:Body>\n</soapenv:Envelope>",
+          "options": {
+            "raw": {
+              "language": "xml"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8090/WSAdministracion0011/soap/WSAdministracion0011Request",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "WSAdministracion0011",
+            "soap",
+            "WSAdministracion0011Request"
+          ]
+        },
+        "description": "Método ActualizarMontoTransferenciaCuenta31 que permite Actualizar el Monto de Transferencia de la cuenta de un cliente."
+      },
+      "response": []
+    },
+    {
+      "name": "eliminarRubros43 Legacy",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "text/xml; charset=utf-8"
+          },
+          {
+            "key": "SOAPAction",
+            "value": "http://bpichincha.com/servicios/ActualizarMontoTransferenciaCuenta31"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ser=\"http://bpichincha.com/servicios\">\n    <soapenv:Header/>\n    <soapenv:Body>\n        <ser:eliminarRubros43>\n            <headerIn>\n                <dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>\n                <empresa>0010</empresa>\n                <canal>02</canal>\n                <medio>020002</medio>\n                <aplicacion>00647</aplicacion>\n                <agencia>197</agencia>\n                <tipoTransaccion>302000201</tipoTransaccion>\n                <geolocalizacion>1234</geolocalizacion>\n                <usuario>ISMAVEGA</usuario>\n                <unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>\n                <guid>59cae047abad47d5b683388a132fbddf</guid>\n                <fechaHora>202506251508450015</fechaHora>\n                <filler/>\n                <idioma>es-EC</idioma>\n                <sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>\n                <ip>0.0.0.0</ip>\n                <idCliente>0801545674</idCliente>\n                <tipoIdCliente>0001</tipoIdCliente>\n                <bancs>\n                    <teller>00070560</teller>\n                    <terminal>1</terminal>\n                    <institucion>0010</institucion>\n                    <agencia>1</agencia>\n                    <estacion>1</estacion>\n                    <aplicacion/>\n                    <canal/>\n                </bancs>\n            </headerIn>\n            <bodyIn>\n                <codigoAutorizaMedioServi>888</codigoAutorizaMedioServi>\n                <nombreRubro>8888</nombreRubro>\n                <eliminadoRubro>1</eliminadoRubro>\n            </bodyIn>\n        </ser:eliminarRubros43>\n    </soapenv:Body>\n</soapenv:Envelope>",
+          "options": {
+            "raw": {
+              "language": "xml"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://10.60.128.58:6981/WSAdministracion0011/soap/WSAdministracion0011Request",
+          "protocol": "http",
+          "host": [
+            "10",
+            "60",
+            "128",
+            "58"
+          ],
+          "port": "6981",
+          "path": [
+            "WSAdministracion0011",
+            "soap",
+            "WSAdministracion0011Request"
+          ]
+        },
+        "description": "Método ActualizarMontoTransferenciaCuenta31 que permite Actualizar el Monto de Transferencia de la cuenta de un cliente."
+      },
+      "response": []
+    },
+    {
+      "name": "eliminarRubros43 Local",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "text/xml; charset=utf-8"
+          },
+          {
+            "key": "SOAPAction",
+            "value": "http://bpichincha.com/servicios/ActualizarMontoTransferenciaCuenta31"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ser=\"http://bpichincha.com/servicios\">\n    <soapenv:Header/>\n    <soapenv:Body>\n        <ser:eliminarRubros43>\n            <headerIn>\n                <dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>\n                <empresa>0010</empresa>\n                <canal>02</canal>\n                <medio>020002</medio>\n                <aplicacion>00647</aplicacion>\n                <agencia>197</agencia>\n                <tipoTransaccion>302000201</tipoTransaccion>\n                <geolocalizacion>1234</geolocalizacion>\n                <usuario>ISMAVEGA</usuario>\n                <unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>\n                <guid>59cae047abad47d5b683388a132fbddf</guid>\n                <fechaHora>202506251508450015</fechaHora>\n                <filler/>\n                <idioma>es-EC</idioma>\n                <sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>\n                <ip>0.0.0.0</ip>\n                <idCliente>0801545674</idCliente>\n                <tipoIdCliente>0001</tipoIdCliente>\n                <bancs>\n                    <teller>00070560</teller>\n                    <terminal>1</terminal>\n                    <institucion>0010</institucion>\n                    <agencia>1</agencia>\n                    <estacion>1</estacion>\n                    <aplicacion/>\n                    <canal/>\n                </bancs>\n            </headerIn>\n            <bodyIn>\n                <codigoAutorizaMedioServi>8898</codigoAutorizaMedioServi>\n                <nombreRubro>888</nombreRubro>\n                <eliminadoRubro>1</eliminadoRubro>\n            </bodyIn>\n        </ser:eliminarRubros43>\n    </soapenv:Body>\n</soapenv:Envelope>",
+          "options": {
+            "raw": {
+              "language": "xml"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8090/WSAdministracion0011/soap/WSAdministracion0011Request",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "WSAdministracion0011",
+            "soap",
+            "WSAdministracion0011Request"
+          ]
+        },
+        "description": "Método ActualizarMontoTransferenciaCuenta31 que permite Actualizar el Monto de Transferencia de la cuenta de un cliente."
+      },
+      "response": []
+    },
+    {
+      "name": "Application-local",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "server:\r\n  port: 8090\r\nspring:\r\n  autoconfigure:\r\n    exclude: org.springframework.boot.autoconfigure.jdbc.JndiDataSourceAutoConfiguration\r\n  main:\r\n    lazy-initialization: on\r\n  application:\r\n    name: tca-msa-sp-wsadministracion0011\r\n  datasource:\r\n    url: jdbc:oracle:thin:@omni-tst-scan.uio.bpichincha.com:10521/TPOMN?oracle.jdbc.ReadTimeout=1000\r\n    username: OPS$USRTADOM\r\n    password: gH5*c8h/JM=3\r\n    driver-class-name: oracle.jdbc.OracleDriver\r\n    hikari:\r\n      maximum-pool-size: 25\r\n      pool-name: Contact\r\n      minimum-idle: 5\r\n      connection-timeout: 500\r\n      idle-timeout: 2000\r\n      max-lifetime: 600000\r\n      leak-detection-threshold: 1000\r\n      registerMbeans: true\r\n  jpa:\r\n    database-platform: org.hibernate.dialect.OracleDialect\r\n    show-sql: false\r\n    properties:\r\n      hibernate:\r\n        default_schema: PRODUCTOS\r\n        format_sql: true\r\n        jdbc:\r\n          batch_size: 15\r\n          batch_versioned_data: true\r\n  header:\r\n    channel: digital\r\n    medium: web\r\nmanagement:\r\n  endpoints:\r\n    web:\r\n      exposure:\r\n        include: health,info,prometheus,metrics\r\n      base-path: /actuator\r\n  endpoint:\r\n    health:\r\n      show-details: when-authorized\r\n      probes:\r\n        enabled: true\r\n  metrics:\r\n    distribution:\r\n      percentiles-histogram:\r\n        http.server.requests: true\r\n\r\ntrace-logger:\r\n  enabled: true\r\n  custom-level:\r\n    enabled: true\r\n    infoEnabled: true\r\n    debugEnabled: false\r\n    warnEnabled: true\r\n    errorEnabled: true\r\n\r\nlogging:\r\n  level:\r\n    root: INFO\r\n    org.springframework: INFO\r\n\r\nservicemonitor:\r\n  enabled: true\r\n\r\n# hiberus-migration:wsadministracion0011request:begin\r\nwsadministracion0011request:\r\n  soap:\r\n    service-path: /WSAdministracion0011/soap/WSAdministracion0011Request\r\n    error-message: \"Error SOAP operation\"\r\n    body-null-message: \"SOAP body is null\"\r\n    no-valid-operation-message: \"No valid SOAP operation found in body\"\r\n    log-request-start: \"SOAP request start\"\r\n    log-request-end: \"SOAP request end\"\r\n    header-invalid-code: 9998\r\n    header-invalid-message: \"Invalid SOAP header\"\r\n    guardar-duplicate-code: 9999\r\n    guardar-duplicate-message: \"nested exception is: javax.transaction.RollbackException\"\r\n    backend: BANCS\r\n  flow:\r\n    success-code: 0000\r\n    success-message: \"Transaction successful\"\r\n    success-business-message: \"Transaction successful\"\r\n    success-type: SUCCESS\r\n    error-type: ERROR\r\n    resource-id: resource\r\n    service-component: service\r\n    operation-component: operation\r\n  bancs:\r\n    business-error-code-backend: BANCS\r\n# hiberus-migration:wsadministracion0011request:end\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    }
+  ]
+}
