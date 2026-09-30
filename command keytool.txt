@@ -5,6 +5,21 @@
 -storepass changeit ^
 -noprompt
 
+
+Crea un proyecto Java con WSDL usando la herramienta create_project_with_wsdl:
+Parámetros:
+projectName: "tpr-msa-sp-wspersona001"
+projectPath: "C:\repos\bancopichincha\WSPersona001"
+wsdlFilePath: "C:\repos\bancopichincha\WSPersona001\WSPersona001.wsdl"
+groupId: "com.pichincha.sp"
+namespace: tpr
+tecnologia: bus
+framework: mvc
+projectType: rest
+invocaBancs = true
+DeploymentType: microservicio
+
+
 http://10.60.128.57:6921/WSProductos0024/soap/WSProductos0024Request 
 
 snyk token
