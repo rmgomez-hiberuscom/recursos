@@ -6,6 +6,12 @@
 -noprompt
 
 
+Se responde HTTP BAD_REQUEST en vez de 200 con el error en el body rompe-contrato
+En buildError() la respuesta sale con HTTP BAD_REQUEST. El legacy contesta siempre HTTP 200 y coloca el fallo dentro del body SOAP (<error><codigo> y <error><mensaje>). Al devolver un HTTP de error el canal no llega a leer el cuerpo: lo trata como caida del servicio, reintenta y abre el circuit breaker en lugar de mostrar el mensaje al usuario. Sustituir el estado BAD_REQUEST por HttpStatus.OK y mapear el fallo a codigo/mensaje del contrato.
+serverResponse.setStatusCode(HttpStatus.BAD_REQUEST);
+nuevo: src/main/java/com/pichincha/sp/infrastructure/exception/error/resolver/BusinessExceptionResolver.java:20donde mirar: BusinessExceptionResolver.java, metodo buildError()check: P4_error_negocio_como_http_error
+
+
 Crea un proyecto Java con WSDL usando la herramienta create_project_with_wsdl:
 Parámetros:
 projectName: "tpr-msa-sp-wspersona001"
