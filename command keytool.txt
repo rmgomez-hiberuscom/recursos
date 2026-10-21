@@ -14,6 +14,14 @@ serverResponse.setStatusCode(HttpStatus.BAD_REQUEST);
 nuevo: src/main/java/com/pichincha/sp/infrastructure/exception/error/resolver/BusinessExceptionResolver.java:20donde mirar: BusinessExceptionResolver.java, metodo buildError()check: P4_error_negocio_como_http_error
 
 
+corregir del wsclientes0080 para desplegarlo
+url de producción https://notificadormsg_f5.uio.bpichincha.com:8443/consultaGarantiasSARWS/GarantiasSARWSService
+initialDelaySeconds -> 70
+failureThreshold -> 3
+WSCLIENTES0080_READ_TIMEOUT_MS -> 3000
+application.yml referenciado unicamente con variables
+
+
 Crea un proyecto Java con WSDL usando la herramienta create_project_with_wsdl:
 Parámetros:
 projectName: "tpr-msa-sp-wspersona001"
