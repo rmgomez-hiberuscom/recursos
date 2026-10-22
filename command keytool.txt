@@ -13,6 +13,11 @@ En buildError() la respuesta sale con HTTP BAD_REQUEST. El legacy contesta siemp
 serverResponse.setStatusCode(HttpStatus.BAD_REQUEST);
 nuevo: src/main/java/com/pichincha/sp/infrastructure/exception/error/resolver/BusinessExceptionResolver.java:20donde mirar: BusinessExceptionResolver.java, metodo buildError()check: P4_error_negocio_como_http_error
 
+wsproductos0024
+initialDelaySeconds -> 70
+HIKARI_CONNECTION_TIMEOUT -> 3000
+cambia bbdd de prod -> PPOMNICA
+agregar transaccional en adaptadores de salida
 
 corregir del wsclientes0080 para desplegarlo
 url de producción https://notificadormsg_f5.uio.bpichincha.com:8443/consultaGarantiasSARWS/GarantiasSARWSService
