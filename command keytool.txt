@@ -8,6 +8,10 @@
 url: https://d-906660acb6.awsapps.com/start
 bp_rmgomez	 
 
+
+jdbc:oracle:thin:@(DESCRIPTION =(ADDRESS_LIST =(LOAD_BALANCE = OFF) (FAILOVER = ON) (ADDRESS = (PROTOCOL = TCP)(HOST = siglo-scan.uio.bpichincha.com)(PORT = 10521))(ADDRESS = (PROTOCOL = TCP)(HOST = siglo-dca-scan.uio.bpichincha.com)(PORT = 10521)))(CONNECT_DATA = (SERVER = DEDICATED)(SERVICE_NAME = srvpprd)))
+
+
 Se responde HTTP BAD_REQUEST en vez de 200 con el error en el body rompe-contrato
 En buildError() la respuesta sale con HTTP BAD_REQUEST. El legacy contesta siempre HTTP 200 y coloca el fallo dentro del body SOAP (<error><codigo> y <error><mensaje>). Al devolver un HTTP de error el canal no llega a leer el cuerpo: lo trata como caida del servicio, reintenta y abre el circuit breaker en lugar de mostrar el mensaje al usuario. Sustituir el estado BAD_REQUEST por HttpStatus.OK y mapear el fallo a codigo/mensaje del contrato.
 serverResponse.setStatusCode(HttpStatus.BAD_REQUEST);
