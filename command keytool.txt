@@ -8,7 +8,7 @@
 url: https://d-906660acb6.awsapps.com/start
 bp_rmgomez	 
 
-
+jdbc:oracle:thin:@siglo-tst-scan.uio.bpichincha.com:10521/DTST
 jdbc:oracle:thin:@(DESCRIPTION =(ADDRESS_LIST =(LOAD_BALANCE = OFF) (FAILOVER = ON) (ADDRESS = (PROTOCOL = TCP)(HOST = siglo-scan.uio.bpichincha.com)(PORT = 10521))(ADDRESS = (PROTOCOL = TCP)(HOST = siglo-dca-scan.uio.bpichincha.com)(PORT = 10521)))(CONNECT_DATA = (SERVER = DEDICATED)(SERVICE_NAME = srvpprd)))
 
 
