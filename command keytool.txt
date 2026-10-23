@@ -8,6 +8,13 @@
 url: https://d-906660acb6.awsapps.com/start
 bp_rmgomez	 
 
+
+cadena de conexion es: jdbc:oracle:thin:@(DESCRIPTION =(ADDRESS_LIST =(LOAD_BALANCE = OFF) (FAILOVER = ON) (ADDRESS = (PROTOCOL = TCP)(HOST = omni-scan.uio.bpichincha.com)(PORT = 10521))(ADDRESS = (PROTOCOL = TCP)(HOST = omni-scan-dca.uio.bpichincha.com)(PORT = 10521)))(CONNECT_DATA = (SERVER = DEDICATED)(SERVICE_NAME = srvppomnica)))  
+Roxana Madeline Gómez Baque
+ 
+pdb:
+  minAvailable: 2 -> 1
+
 initialDelaySeconds -> 70
 failureThreshold -> 3
 CGI_CUSTOM_LEVEL_DEBUG_ENABLED -> false
